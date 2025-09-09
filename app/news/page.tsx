@@ -16,7 +16,7 @@ export default function NewsPage() {
       date: "2024-08-15",
       readTime: "3 min read",
       category: "Company News",
-      image: "/biodigester-installation-in-rural-area.jpg",
+      image: "/cloudewhite.jpg",
       featured: true,
     },
     {
@@ -37,7 +37,7 @@ export default function NewsPage() {
       date: "2024-07-10",
       readTime: "2 min read",
       category: "Awards",
-      image: "/environmental-award-ceremony.jpg",
+      image: "/WhatsApp Image 2025-09-09 at 16.08.12_d55b20f6.jpg",
     },
     {
       id: 4,
@@ -47,18 +47,18 @@ export default function NewsPage() {
       date: "2024-06-22",
       readTime: "5 min read",
       category: "Technology",
-      image: "/advanced-biodigester-technology.jpg",
+      image: "/bg4.jpg",
     },
-    {
-      id: 5,
-      title: "Community Training Program Launches in Kigali",
-      excerpt:
-        "New comprehensive training program empowers local technicians with biodigester installation and maintenance skills, creating employment opportunities.",
-      date: "2024-06-05",
-      readTime: "3 min read",
-      category: "Training",
-      image: "/technical-training-session.jpg",
-    },
+    // {
+    //   id: 5,
+    //   title: "Community Training Program Launches in Kigali",
+    //   excerpt:
+    //     "New comprehensive training program empowers local technicians with biodigester installation and maintenance skills, creating employment opportunities.",
+    //   date: "2024-06-05",
+    //   readTime: "3 min read",
+    //   category: "Training",
+    //   image: "/technical-training-session.jpg",
+    // },
     {
       id: 6,
       title: "1000th Biodigester Installation Milestone Reached",
@@ -67,7 +67,7 @@ export default function NewsPage() {
       date: "2024-05-18",
       readTime: "4 min read",
       category: "Milestones",
-      image: "/celebration-milestone-biodigester.jpg",
+      image: "/Claudette Digester.jpeg",
     },
   ]
 
@@ -111,9 +111,9 @@ export default function NewsPage() {
       <Header />
 
       <PageBanner
-        title="Latest News & Updates"
+        title="Latest News and Updates"
         subtitle="Stay informed about our latest developments, partnerships, and impact in the clean energy sector across Rwanda and beyond."
-        backgroundImage="/green-energy-biogas-plant-with-solar-panels.jpg"
+        backgroundImage="/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg"
       />
 
       <main className="pt-16 pb-20 relative overflow-hidden">

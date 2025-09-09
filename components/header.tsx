@@ -20,7 +20,7 @@ export function Header() {
     <header className="bg-background sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo - Made more prominent */}
+          {/* Logo - with text */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/images/WhatsApp Image 2025-09-02 at 14.14.40_9618baaa.jpg"
@@ -30,6 +30,7 @@ export function Header() {
               className="h-16 w-auto object-contain"
               priority
             />
+            <span className="text-2xl font-bold text-primary">Green Fuel</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -47,16 +48,19 @@ export function Header() {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2 text-lg font-semibold">
-              Get Quote
-            </Button>
-          </div>
-          
-          {/* Mobile menu button */}
-          <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
+  <Link href="/products">
+    <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2 text-lg font-semibold">
+      Get Quote
+    </Button>
+  </Link>
+</div>
+
+{/* Mobile menu button */}
+<button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+  {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+</button>
+</div>
+
         
         {/* Mobile Navigation */}
         {isMenuOpen && (

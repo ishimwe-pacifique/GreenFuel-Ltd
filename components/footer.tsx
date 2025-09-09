@@ -100,7 +100,7 @@ export function Footer() {
                 Contact Us
               </Link>
               <Link 
-                href="/careers" 
+                href="#" 
                 className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
               >
                 Careers
@@ -124,11 +124,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3 group">
                 <Phone className="h-5 w-5 text-green-500 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-base">+250 XXX XXX XXX</span>
+                <span className="text-gray-300 text-base">+250 789 374 747</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <Mail className="h-5 w-5 text-green-500 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-base">info@greenfuel.rw</span>
+                <span className="text-gray-300 text-base">info1.greenfuel @gmail.com</span>
               </div>
             </div>
           </div>
@@ -166,13 +166,13 @@ export function Footer() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-base">
-              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
                 Terms of Service
               </Link>
-              <Link href="/sustainability" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
                 Sustainability Report
               </Link>
             </div>

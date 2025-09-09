@@ -34,7 +34,7 @@ export function ProductsPreview() {
         "Removable, modular, easy to install and maintain biodigester systems made of high quality materials. Available in sizes from 8 to 50 cubic meters.",
       features: ["Removable & Modular", "Easy Installation", "8-50 Cubic Meters", "High Quality Materials"],
       icon: Settings,
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/bg4.jpg",
       gradient: "from-green-500/20 to-emerald-600/20",
     },
     {
@@ -43,7 +43,7 @@ export function ProductsPreview() {
         "Built to last with concrete and stone construction. Simple and cost-effective bio-energy solution for homes and farms. Available in various sizes.",
       features: ["Concrete & Stone Build", "Cost Effective", "8-50 Cubic Meters", "Long Lasting"],
       icon: Settings,
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/bg2.jpg",
       gradient: "from-blue-500/20 to-cyan-600/20",
     },
     {
@@ -52,7 +52,7 @@ export function ProductsPreview() {
         "Comprehensive services including professional installation, regular monitoring, and proactive maintenance to keep systems running smoothly.",
       features: ["Professional Installation", "Regular Monitoring", "Proactive Maintenance", "Long-term Support"],
       icon: Wrench,
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/installation.jpg",
       gradient: "from-orange-500/20 to-amber-600/20",
     },
   ]
@@ -93,7 +93,7 @@ export function ProductsPreview() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16 transform transition-all duration-1000 ease-out">
             <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-700 bg-clip-text text-transparent mb-6 text-balance">
-              Our Products & Services
+              Our Products and Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto text-pretty leading-relaxed">
               Flexible bio-energy solutions tailored to your specific needs, from small households to large

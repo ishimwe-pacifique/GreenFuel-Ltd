@@ -1,26 +1,110 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Leaf, Zap, Users } from "lucide-react"
-import Image from "next/image"
+import { useState, useEffect } from "react"
 
 export function HeroSection() {
+  const [displayedText, setDisplayedText] = useState("")
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const fullText = "Biodegradable waste to Clean, reliable energy right at the source"
+  const words = fullText.split(" ")
+
+  const backgroundImages = [
+    "/bg1.jpg",
+    "/bg2.jpg",
+    "/bg4.jpg",
+    "/bg5.jpg",
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentWordIndex < words.length) {
+        setDisplayedText((prev) => {
+          const newText = prev + (prev ? " " : "") + words[currentWordIndex]
+          return newText
+        })
+        setCurrentWordIndex((prev) => prev + 1)
+      } else {
+        setTimeout(() => {
+          setDisplayedText("")
+          setCurrentWordIndex(0)
+        }, 3000)
+      }
+    }, 800)
+
+    return () => clearInterval(interval)
+  }, [currentWordIndex, words])
+
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length)
+    }, 5000)
+
+    return () => clearInterval(imageInterval)
+  }, [backgroundImages.length])
+
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
-      <Image
-        src="/green-energy-biogas-plant-with-solar-panels.jpg"
-        alt="Green Energy Background"
-        fill
-        className="object-cover"
-        priority
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fadeInUp {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+      `}</style>
+
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out"
+        style={{
+          backgroundImage: `url('${backgroundImages[currentImageIndex]}')`,
+        }}
       />
-      <div className="absolute inset-0 bg-black/60" />
+
+      <div className="absolute inset-0 bg-black/60 transition-all duration-1000 ease-in-out" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                Transforming Waste into <span className="text-green-400">Clean Energy</span>
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance min-h-[120px] lg:min-h-[180px]">
+                <span className="inline-block">
+                  {displayedText.length > 0 &&
+                    displayedText.split(" ").map((word, index) => {
+                      if (word === "right" || word === "at" || word === "the" || word === "source") {
+                        return (
+                          <span
+                            key={`green-${word}-${index}`}
+                            className="text-green-400 animate-pulse transition-all duration-500 ease-in-out"
+                          >
+                            {word}
+                            {index < displayedText.split(" ").length - 1 ? " " : ""}
+                          </span>
+                        )
+                      }
+                      return (
+                        <span
+                          key={`white-${word}-${index}`}
+                          className="inline-block mr-1 transition-all duration-700 ease-in-out transform hover:scale-105 animate-fadeInUp"
+                        >
+                          {word}
+                          {index < displayedText.split(" ").length - 1 ? " " : ""}
+                        </span>
+                      )
+                    })}
+                  <span className="animate-pulse text-green-400 transition-opacity duration-1000">|</span>
+                </span>
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed text-pretty">
                 Green Fuel Ltd is a social enterprise in Rwanda specialized in installing high-quality bio-digesters
@@ -29,20 +113,19 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button size="lg" className="bg-green-600 text-white hover:bg-green-700">
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+                className="border-green-600 text-green-600 hover:bg-green-600/10 bg-transparent"
               >
                 Learn More
               </Button>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
                 <div className="text-2xl font-bold text-green-400">75%</div>
@@ -59,7 +142,6 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Visual */}
           <div className="relative">
             <div className="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/30">
               <div className="grid grid-cols-2 gap-6">
@@ -86,3 +168,5 @@ export function HeroSection() {
     </section>
   )
 }
+
+export default HeroSection

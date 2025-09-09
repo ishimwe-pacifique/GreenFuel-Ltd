@@ -11,8 +11,8 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "pacifiquishimwe152@gmail.com",
-        pass: "poun vtqx kurf chzi",
+        user: "info1.greenfuel @gmail.com",
+        pass: "nvmz ywdn jowe tzxc",
       },
     })
 
@@ -115,7 +115,7 @@ export async function POST(request: NextRequest) {
           </p>
           
           <div style="border-top: 2px solid #e5e7eb; padding-top: 20px; margin-top: 30px; text-align: center; color: #6b7280; font-size: 14px;">
-            <p style="margin: 5px 0;">📧 pacifiquishimwe152@gmail.com</p>
+            <p style="margin: 5px 0;">📧 info1.greenfuel @gmail.com</p>
             <p style="margin: 5px 0;">🌐 Building a Sustainable Future, One Biodigester at a Time</p>
           </div>
         </div>
@@ -123,14 +123,14 @@ export async function POST(request: NextRequest) {
     `
 
     await transporter.sendMail({
-      from: "pacifiquishimwe152@gmail.com",
-      to: "pacifiquishimwe152@gmail.com",
+      from: "info1.greenfuel @gmail.com",
+      to: "info1.greenfuel @gmail.com",
       subject: `🌱 New Biodigester Quote Request - ${formData.productName || "General Inquiry"} - ${formData.name}`,
       html: businessEmailTemplate,
     })
 
     await transporter.sendMail({
-      from: "pacifiquishimwe152@gmail.com",
+      from: "info1.greenfuel @gmail.com",
       to: formData.email,
       subject: `Thank you for your interest in Green Fuel Biodigester Solutions - ${referenceId}`,
       html: customerEmailTemplate,

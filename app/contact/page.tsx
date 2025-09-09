@@ -12,19 +12,19 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Our Location",
-      details: ["Kigali, Rwanda", "Eastern Province Office", "Available Nationwide"],
+      details: ["Nyagatare, Rwanda", "Eastern Province Office", "Available Nationwide"],
       color: "from-green-100 to-emerald-100 group-hover:from-green-200 group-hover:to-emerald-200"
     },
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+250 788 123 456", "+250 722 987 654", "Emergency: +250 700 111 222"],
+      details: ["+250 789 374 747"],
       color: "from-blue-100 to-cyan-100 group-hover:from-blue-200 group-hover:to-cyan-200"
     },
     {
       icon: Mail,
       title: "Email Addresses",
-      details: ["info@greenfuel.rw", "sales@greenfuel.rw", "support@greenfuel.rw"],
+      details: ["info1.greenfuel @gmail.com"],
       color: "from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200"
     },
     {
@@ -70,7 +70,7 @@ export default function ContactPage() {
       <PageBanner
         title="Get In Touch"
         subtitle="Ready to transform your energy needs with clean, sustainable biodigester solutions? Contact our expert team for a free consultation and personalized quote."
-        backgroundImage="/green-energy-biogas-plant-with-solar-panels.jpg"
+        backgroundImage="/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg"
       />
 
       <main className="pt-16 pb-20 relative overflow-hidden">

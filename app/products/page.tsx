@@ -45,12 +45,12 @@ export default function ProductsPage() {
         "10-year warranty",
         "Suitable for households and small institutions",
       ],
-      capacity: "5-50 cubic meters",
+      capacity: "8-50 cubic meters",
       icon: Droplets,
       badge: "Most Popular",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/bg4.jpg",
       gradient: "from-green-500/20 to-emerald-600/20",
-      price: "From $2,500",
+      // price: "From $2,500",
       installTime: "3-5 days",
     },
     {
@@ -65,12 +65,12 @@ export default function ProductsPage() {
         "25-year lifespan",
         "Ideal for large institutions",
       ],
-      capacity: "20-200 cubic meters",
+      capacity: "8-50 cubic meters",
       icon: Shield,
       badge: "Heavy Duty",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/bg2.jpg",
       gradient: "from-blue-500/20 to-cyan-600/20",
-      price: "From $5,000",
+      // price: "From $5,000",
       installTime: "7-10 days",
     },
     {
@@ -89,9 +89,9 @@ export default function ProductsPage() {
       capacity: "All System Types",
       icon: Wrench,
       badge: "Full Service",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/installation.jpg",
       gradient: "from-orange-500/20 to-amber-600/20",
-      price: "From $500/year",
+      // price: "From $500/year",
       installTime: "Ongoing",
     },
   ]
@@ -158,7 +158,7 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-green-50/30 to-emerald-50/20">
       <Header />
       <PageBanner
-        title="Our Products & Services"
+        title="Our Products and Services"
         subtitle="Comprehensive bio-digester solutions designed to meet your specific energy needs"
         backgroundImage="/WhatsApp Image 2025-09-05 at 20.02.47_3ec366e9.jpg"
       />
@@ -246,8 +246,8 @@ export default function ProductsPage() {
                           <span className="font-semibold text-blue-700">{product.installTime}</span>
                         </div>
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-gray-500">Starting from:</span>
-                          <span className="font-bold text-lg text-emerald-700">{product.price}</span>
+                          {/* <span className="text-gray-500">Starting from:</span>
+                          <span className="font-bold text-lg text-emerald-700">{product.price}</span> */}
                         </div>
                       </div>
                     </CardHeader>
@@ -343,8 +343,8 @@ export default function ProductsPage() {
                                   <span className="font-semibold text-green-700">{product.capacity}</span>
                                 </div>
                                 <div className="flex items-center justify-between text-sm">
-                                  <span className="text-gray-500">Starting from:</span>
-                                  <span className="font-bold text-lg text-emerald-700">{product.price}</span>
+                                  {/* <span className="text-gray-500">Starting from:</span>
+                                  <span className="font-bold text-lg text-emerald-700">{product.price}</span> */}
                                 </div>
                               </div>
                             </CardHeader>

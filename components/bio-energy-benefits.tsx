@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Leaf, DollarSign, Sprout, Heart } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import Link from "next/link"
 
 export function BioEnergyBenefits() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -237,20 +238,22 @@ export function BioEnergyBenefits() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <motion.button
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span>Learn More About Our Solutions</span>
-            <motion.div
-              className="ml-2"
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-            >
-              →
-            </motion.div>
-          </motion.button>
+         <Link href="/products">
+  <motion.button
+    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+    whileHover={{ scale: 1.05, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <span>Learn More About Our Solutions</span>
+    <motion.div
+      className="ml-2"
+      animate={{ x: [0, 5, 0] }}
+      transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
+    >
+      →
+    </motion.div>
+  </motion.button>
+</Link>
         </motion.div>
       </div>
     </section>

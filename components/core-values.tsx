@@ -18,28 +18,28 @@ export function CoreValues() {
       description:
         "We are focused on cultivating positive change by lowering emission, making clean energy accessible while also creating green jobs.",
       color: "from-emerald-500 to-teal-600",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
     },
     {
       icon: Lightbulb,
       title: "Innovation",
       description: "Persistently seeking and implementing new solutions for clean energy access.",
       color: "from-amber-500 to-orange-600",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
     },
     {
       icon: Shield,
       title: "Ethical",
       description: "Trustworthy, transparency, reliable solution for peri-urban and rural community.",
       color: "from-blue-500 to-indigo-600",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
     },
     {
       icon: Users,
       title: "Social Inclusion",
       description: "We create opportunities; empower local underserved communities with clean energy access.",
       color: "from-purple-500 to-pink-600",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
     },
     {
       icon: Leaf,
@@ -47,7 +47,7 @@ export function CoreValues() {
       description:
         "We provide clean energy that reduces pollution, protecting natural resources through innovative technology that turn waste into value.",
       color: "from-green-500 to-emerald-600",
-      image: "/WhatsApp Image 2025-09-05 at 20.02.44_cb46a0f3.jpg",
+      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
     },
   ]
 
