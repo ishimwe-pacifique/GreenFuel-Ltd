@@ -62,7 +62,7 @@ export function ProductsPreview() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % products.length)
-    }, 4000)
+    }, 19000)
 
     return () => clearInterval(interval)
   }, [isAutoPlaying, products.length])

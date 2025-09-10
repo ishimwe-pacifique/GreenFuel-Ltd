@@ -134,7 +134,7 @@ export default function ProductsPage() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % products.length)
-    }, 5000)
+    }, 19000)
 
     return () => clearInterval(interval)
   }, [isAutoPlaying, products.length])
