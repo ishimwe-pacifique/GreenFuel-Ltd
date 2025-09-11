@@ -15,7 +15,7 @@ export default function NewsPage() {
       id: 1,
       title: "Green Fuel Ltd Featured in Women's Forum Global Network",
       excerpt:
-        "Claudette Akimpaye and Green Fuel Ltd are showcased in the Women's Forum for the Economy & Society's global network, highlighting female entrepreneurship in clean energy from Rwanda to the world stage.",
+        "Green Fuel Ltd is showcased in the Women's Forum for the Economy & Society's global network, highlighting female entrepreneurship in clean energy from Rwanda to the world stage.",
       date: "2024-12-15",
       readTime: "3 min read",
       category: "Company News",
