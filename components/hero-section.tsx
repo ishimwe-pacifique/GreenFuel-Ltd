@@ -158,7 +158,7 @@ export function HeroSection() {
                 <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center col-span-2 border border-white/20">
                   <Users className="h-12 w-12 text-green-400 mx-auto mb-4" />
                   <h3 className="font-semibold text-white">Community Impact</h3>
-                  <p className="text-sm text-gray-200 mt-2">Empowering African communities with clean energy access and creation</p>
+                  <p className="text-sm text-gray-200 mt-2">Empowering African communities with clean energy access and creation of job</p>
                 </div>
               </div>
             </div>

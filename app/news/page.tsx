@@ -10,16 +10,18 @@ import { Calendar, Clock, ArrowRight, Leaf, Users, Award } from "lucide-react"
 
 export default function NewsPage() {
   const newsArticles = [
+   
     {
       id: 1,
-      title: "Green Fuel Ltd Expands Operations to Eastern Province",
+      title: "Green Fuel Ltd Featured in Women's Forum Global Network",
       excerpt:
-        "We're excited to announce the expansion of our biodigester installation services to the Eastern Province, bringing clean energy solutions to more rural communities.",
-      date: "2024-08-15",
+        "Claudette Akimpaye and Green Fuel Ltd are showcased in the Women's Forum for the Economy & Society's global network, highlighting female entrepreneurship in clean energy from Rwanda to the world stage.",
+      date: "2024-12-15",
       readTime: "3 min read",
       category: "Company News",
       image: "/cloudewhite.jpg",
       featured: true,
+      link: "https://www.linkedin.com/posts/women-s-forum-for-the-economy-and-society_womensforum-womenintech-globalnetwork-ugcPost-7354180062255935488-FeXk?utm_source=share&utm_medium=member_android&rcm=ACoAAFSda5kBMIWST1HV7svnZvc69P0AuiWJUHg",
     },
     // {
     //   id: 2,
