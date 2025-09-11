@@ -12,55 +12,55 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      name: "Marie Uwimana",
+      name: "Rutagengwa Paul",
       role: "Household Owner",
-      location: "Kigali, Rwanda",
-      image: "/man-avatar-image-for-profile-png.webp",
+      location: "Nyatare, Rwanda",
+      image: "/",
       rating: 5,
       quote:
         "Green Fuel's biodigester has completely transformed our daily life. We save money on cooking gas and our kitchen is much cleaner without smoke. The installation team was professional and the system works perfectly.",
       highlight: "Saves 80% on cooking costs",
     },
     {
-      name: "Jean Baptiste Nzeyimana",
+      name: "Merry Baziga",
       role: "Farm Owner",
-      location: "Musanze, Rwanda",
-      image: "/OIP.webp",
+      location: "Nyagatare, Rwanda",
+      image: "/",
       rating: 5,
       quote:
         "The biodigester not only provides clean energy for our farm operations but also produces excellent fertilizer for our crops. Our harvest has increased by 40% since we started using the bio-slurry.",
       highlight: "40% increase in crop yield",
     },
-    {
-      name: "Sister Agnes Mukamana",
-      role: "School Administrator",
-      location: "Huye, Rwanda",
-      image: "/OIP (1).webp",
-      rating: 5,
-      quote:
-        "Our school kitchen now runs on clean biogas, feeding 300 students daily. The children no longer suffer from smoke-related health issues, and we've reduced our energy costs significantly.",
-      highlight: "Serves 300+ students daily",
-    },
-    {
-      name: "Emmanuel Habimana",
-      role: "Restaurant Owner",
-      location: "Butare, Rwanda",
-      image: "/pacifique.jpg",
-      rating: 5,
-      quote:
-        "Since installing the biodigester system, our restaurant operates more efficiently. The consistent gas supply helps us serve customers better, and the cost savings have improved our profit margins.",
-      highlight: "Consistent energy supply",
-    },
-    {
-      name: "Grace Nyirahabimana",
-      role: "Community Leader",
-      location: "Nyagatare, Rwanda",
-      image: "/man-avatar-image-for-profile-png.webp",
-      rating: 5,
-      quote:
-        "Green Fuel has empowered our entire community. Twenty families now have biodigesters, creating local jobs and reducing our environmental impact. It's a true success story.",
-      highlight: "20 families empowered",
-    },
+    // {
+    //   name: "Sister Agnes Mukamana",
+    //   role: "School Administrator",
+    //   location: "Huye, Rwanda",
+    //   image: "/OIP (1).webp",
+    //   rating: 5,
+    //   quote:
+    //     "Our school kitchen now runs on clean biogas, feeding 300 students daily. The children no longer suffer from smoke-related health issues, and we've reduced our energy costs significantly.",
+    //   highlight: "Serves 300+ students daily",
+    // },
+    // {
+    //   name: "Emmanuel Habimana",
+    //   role: "Restaurant Owner",
+    //   location: "Butare, Rwanda",
+    //   image: "/pacifique.jpg",
+    //   rating: 5,
+    //   quote:
+    //     "Since installing the biodigester system, our restaurant operates more efficiently. The consistent gas supply helps us serve customers better, and the cost savings have improved our profit margins.",
+    //   highlight: "Consistent energy supply",
+    // },
+    // {
+    //   name: "Grace Nyirahabimana",
+    //   role: "Community Leader",
+    //   location: "Nyagatare, Rwanda",
+    //   image: "/man-avatar-image-for-profile-png.webp",
+    //   rating: 5,
+    //   quote:
+    //     "Green Fuel has empowered our entire community. Twenty families now have biodigesters, creating local jobs and reducing our environmental impact. It's a true success story.",
+    //   highlight: "20 families empowered",
+    // },
   ]
 
   useEffect(() => {

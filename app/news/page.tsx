@@ -1,3 +1,5 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PageBanner } from "@/components/page-banner"
@@ -19,16 +21,16 @@ export default function NewsPage() {
       image: "/cloudewhite.jpg",
       featured: true,
     },
-    {
-      id: 2,
-      title: "Partnership with Local Schools Brings Clean Energy to Education",
-      excerpt:
-        "Our new partnership program with local schools is providing sustainable energy solutions while creating educational opportunities about renewable energy.",
-      date: "2024-07-28",
-      readTime: "4 min read",
-      category: "Partnerships",
-      image: "/school-with-biodigester-system.jpg",
-    },
+    // {
+    //   id: 2,
+    //   title: "Partnership with Local Schools Brings Clean Energy to Education",
+    //   excerpt:
+    //     "Our new partnership program with local schools is providing sustainable energy solutions while creating educational opportunities about renewable energy.",
+    //   date: "2024-07-28",
+    //   readTime: "4 min read",
+    //   category: "Partnerships",
+    //   image: "/school-with-biodigester-system.jpg",
+    // },
     {
       id: 3,
       title: "Award Recognition for Environmental Impact",
@@ -37,11 +39,12 @@ export default function NewsPage() {
       date: "2024-07-10",
       readTime: "2 min read",
       category: "Awards",
-      image: "/WhatsApp Image 2025-09-09 at 16.08.12_d55b20f6.jpg",
+      image: "/claudeaward.jpeg",
+      link: "https://www.linkedin.com/posts/regional-leadership-center-east-africa_cohort60-designchallenge-yaliimpact-activity-7275516138782928898-zDPW?utm_source=share&utm_medium=member_android&rcm=ACoAAFSda5kBMIWST1HV7svnZvc69P0AuiWJUHg",
     },
     {
       id: 4,
-      title: "New Geo-membrane Technology Increases Efficiency by 30%",
+      title: "New Geo-membrane Technology Increases Efficiency by 60%",
       excerpt:
         "Our latest geo-membrane biodigester technology delivers unprecedented efficiency improvements, making clean energy more accessible than ever.",
       date: "2024-06-22",
@@ -59,16 +62,16 @@ export default function NewsPage() {
     //   category: "Training",
     //   image: "/technical-training-session.jpg",
     // },
-    {
-      id: 6,
-      title: "1000th Biodigester Installation Milestone Reached",
-      excerpt:
-        "Celebrating a major milestone as we complete our 1000th biodigester installation, impacting thousands of lives across Rwanda.",
-      date: "2024-05-18",
-      readTime: "4 min read",
-      category: "Milestones",
-      image: "/Claudette Digester.jpeg",
-    },
+    // {
+    //   id: 6,
+    //   title: "1000th Biodigester Installation Milestone Reached",
+    //   excerpt:
+    //     "Celebrating a major milestone as we complete our 1000th biodigester installation, impacting thousands of lives across Rwanda.",
+    //   date: "2024-05-18",
+    //   readTime: "4 min read",
+    //   category: "Milestones",
+    //   image: "/Claudette Digester.jpeg",
+    // },
   ]
 
   const getCategoryIcon = (category: string) => {
@@ -100,6 +103,12 @@ export default function NewsPage() {
         return "bg-gradient-to-r from-orange-500 to-red-600 text-white"
       default:
         return "bg-gradient-to-r from-gray-500 to-slate-600 text-white"
+    }
+  }
+
+  const handleReadMore = (article: any) => {
+    if (article.link) {
+      window.open(article.link, '_blank', 'noopener,noreferrer')
     }
   }
 
@@ -171,7 +180,10 @@ export default function NewsPage() {
                           <span className="font-medium">{featuredArticle.readTime}</span>
                         </div>
                       </div>
-                      <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group">
+                      <Button 
+                        onClick={() => handleReadMore(featuredArticle)}
+                        className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group"
+                      >
                         Read Full Story
                         <ArrowRight className="h-4 w-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                       </Button>
@@ -238,7 +250,11 @@ export default function NewsPage() {
                             <span className="font-medium">{article.readTime}</span>
                           </div>
                         </div>
-                        <Button variant="outline" className="w-full border-2 border-green-200 hover:border-green-400 hover:bg-green-50 font-semibold py-2 rounded-xl transition-all duration-300 group">
+                        <Button 
+                          variant="outline" 
+                          onClick={() => handleReadMore(article)}
+                          className="w-full border-2 border-green-200 hover:border-green-400 hover:bg-green-50 font-semibold py-2 rounded-xl transition-all duration-300 group"
+                        >
                           Read More
                           <ArrowRight className="h-4 w-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                         </Button>
