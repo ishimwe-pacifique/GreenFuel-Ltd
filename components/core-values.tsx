@@ -16,30 +16,30 @@ export function CoreValues() {
       icon: Target,
       title: "Impact Driven",
       description:
-        "We are focused on cultivating positive change by lowering emission, making clean energy accessible while also creating green jobs.",
+        "We are focused on cultivating positive change by lowering emission, making clean and affordable cooking energy accessible for all while also creating jobs for women and youth in the sector.",
       color: "from-emerald-500 to-teal-600",
-      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
+      image: "/coreValuebackground.jpg",
     },
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Persistently seeking and implementing new solutions for clean energy access.",
+      description: "In our solution, technology powers every flame - from anaerobic digestion technology to system digester digital monitoring – Powered by IOT technology tracking performances and output prediction - ensuring gas never runs out.",
       color: "from-amber-500 to-orange-600",
-      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
+      image: "/coreValuebackground.jpg",
     },
     {
       icon: Shield,
       title: "Ethical",
-      description: "Trustworthy, transparency, reliable solution for peri-urban and rural community.",
+      description: "Data driven solution technology.",
       color: "from-blue-500 to-indigo-600",
-      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
+      image: "/coreValuebackground.jpg",
     },
     {
       icon: Users,
       title: "Social Inclusion",
-      description: "We create opportunities; empower local underserved communities with clean energy access.",
+      description: "We empower local underserved communities through clean and affordable energy access and Job provision.",
       color: "from-purple-500 to-pink-600",
-      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
+      image: "/coreValuebackground.jpg",
     },
     {
       icon: Leaf,
@@ -47,7 +47,7 @@ export function CoreValues() {
       description:
         "We provide clean energy that reduces pollution, protecting natural resources through innovative technology that turn waste into value.",
       color: "from-green-500 to-emerald-600",
-      image: "/rwanda-faustin-tuyambaze-credit-photo-unsplash.jpg",
+      image: "/coreValuebackground.jpg",
     },
   ]
 
@@ -135,9 +135,9 @@ export function CoreValues() {
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Our Core Values
+          Core Values
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -145,7 +145,7 @@ export function CoreValues() {
           >
             The principles that guide our mission to transform waste into clean energy and empower communities across
             Africa.
-          </motion.p>
+          </motion.p> */}
         </motion.div>
 
         <motion.div

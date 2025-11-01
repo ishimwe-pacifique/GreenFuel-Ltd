@@ -10,8 +10,8 @@ export default function AboutPage() {
       <Header />
       <PageBanner
         title="Green Fuel"
-        subtitle="A Rwandan social enterprise dedicated to providing clean, sustainable energy solutions"
-        backgroundImage="/installation.jpg"
+        subtitle="Green Fuel is a social enterprise dedicated to providing affordable, reliable, clean cooking energy for underserved communities in Rwanda by installing smart digesters that turn kitchen, animal and human waste into cooking gas."
+        backgroundImage="/firepic.jpg"
       />
 
       <main className="pb-20 relative overflow-hidden">
@@ -27,12 +27,12 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-6">
-                Why Bio-Energy?
+                 Why Bio-Cooking Energy?
               </h2>
-              <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
+              {/* <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
                 Bio-energy represents the future of sustainable power generation, turning organic waste into clean,
                 renewable energy.
-              </p>
+              </p> */}
               <div className="w-32 h-1 bg-gradient-to-r from-green-500 to-teal-600 mx-auto rounded-full mt-6"></div>
             </div>
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
                         Before Green Fuel
                       </h3>
                       <p className="text-red-100 leading-relaxed font-medium">
-                        Environmental degradation, energy poverty, and unsustainable practices affecting communities
+                        Cooking energy poverty, and unhealthy communities
                       </p>
                     </div>
                   </div>
@@ -160,8 +160,7 @@ export default function AboutPage() {
                     </h2>
                   </div>
                   <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                    To be the leading provider of sustainable energy solutions in Africa, transforming waste into
-                    valuable resources while protecting our environment for future generations.
+                    A cleaner, healthier, cost saving kitchen fueled by smart, homegrown bio energy solutions.
                   </p>
                   <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-green-500 to-emerald-600 group-hover:w-full transition-all duration-500"></div>
                 </CardContent>
@@ -179,8 +178,7 @@ export default function AboutPage() {
                     </h2>
                   </div>
                   <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                    To provide affordable, clean energy solutions through bio-digester technology, empowering
-                    communities while reducing environmental impact and promoting sustainable development.
+                    To replace fossil and biomass fuels with smart, affordable, clean, reliable and locally made cooking gas made from biodegradable wastes.
                   </p>
                   <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 group-hover:w-full transition-all duration-500"></div>
                 </CardContent>
@@ -194,49 +192,44 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-16">
-                <div className="bg-gradient-to-br from-pink-100 to-red-100 rounded-3xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                {/* <div className="bg-gradient-to-br from-pink-100 to-red-100 rounded-3xl w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Heart className="h-12 w-12 text-black drop-shadow-sm" />
-                </div>
+                </div> */}
                 <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-6">
                   Our Story
                 </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-red-600 mx-auto rounded-full"></div>
+                {/* <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-red-600 mx-auto rounded-full"></div> */}
               </div>
 
               <Card className="border-0 bg-white/90 backdrop-blur-sm shadow-xl overflow-hidden">
                 <CardContent className="p-10 lg:p-16">
                   <div className="prose prose-lg max-w-none text-gray-600 space-y-8">
                     <p className="text-xl leading-relaxed font-medium first-letter:text-6xl first-letter:font-bold first-letter:text-green-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                      Green Fuel Ltd was founded with a simple yet powerful vision: to transform the way Africa
-                      generates and consumes energy. Born from the recognition that traditional energy sources are both
-                      environmentally harmful and economically unsustainable for many communities, we set out to create
-                      a better solution.
+                    Green Fuel Ltd was founded in 2024 with a simple yet powerful mission: To replace fossil and biomass fuels with smart, affordable, clean, reliable and locally made cooking gas made from biodegradable wastes. Few years ago, firewood was everywhere, free — gathered from the land and shared among neighbors, other wood based fuels like charcoal was also affordable. But today things have changed, as populations grow, forests shrinks. 
                     </p>
 
                     <div className="border-l-4 border-green-500 pl-6 bg-green-50/50 py-4 rounded-r-lg">
                       <p className="text-lg leading-relaxed font-medium">
-                        Our journey began in Nyagatare-Rwanda, where we witnessed firsthand the challenges faced by
-                        households and institutions in accessing clean, affordable energy. Through extensive research
-                        and development, we developed innovative bio-digester systems that convert organic waste into
-                        clean biogas and valuable fertilizer.
+                       To make a way for either farming or housing, of which made what was once abundant become a costly commodity, sold in markets and local boutiques priced like gold. The imported LPG gas, also remains too expensive for most of African families to afford, which increases the dependency of these biomass fuels that are not only expensive but also comes at a deadly price of silently taking 700,000 peoples’ lives prematurely every year. Meanwhile, our kitchens, animals we are rearing, and ourselves every day generates numbers of kilograms of bio-degrable wastes, dumped openly non - valorized – polluting the environment — of which with proper management - is a great source clean, local, sustainable energy - currently in misuse. 
                       </p>
                     </div>
 
                     <p className="text-lg leading-relaxed font-medium">
-                      Today, we continue to expand our impact across Rwanda, helping communities achieve energy
-                      independence while protecting the environment. Every installation represents not just a
-                      technological solution, but a step toward a more sustainable and prosperous future for all.
+                      Our journey began in Nyagatare – Eastern Province of Rwanda, as one of the district with cooking energy poverty but also highly animal waste generation due to highly cow rearing. Through extensive research and expert guidance, we developed innovative, smart bio-digester system that converts biodegradable waste into clean gas and valuable fertilizer as byproduct.
+
+Today, households served achieved cooking energy independence while also protecting the environment. Every installation made represents not just a technological solution, but a step toward a more sustainable and prosperous future for all through job creation, energy accessibility and enriched environment.
+
                     </p>
                   </div>
 
                   {/* Call-to-action highlight */}
                   <div className="mt-12 p-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl text-center shadow-xl">
                     <p className="text-xl font-semibold text-white mb-2">
-                      Join us in building a sustainable future for Africa
+                      Join us in building this renewable energy tech solution for a sustainable cooking energy access for all.
                     </p>
-                    <p className="text-green-100 font-medium">
+                    {/* <p className="text-green-100 font-medium">
                       Together, we can transform waste into wealth and communities into champions of clean energy.
-                    </p>
+                    </p> */}
                   </div>
                 </CardContent>
               </Card>

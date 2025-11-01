@@ -31,36 +31,6 @@ export function Testimonials() {
         "The biodigester not only provides clean energy for our farm operations but also produces excellent fertilizer for our crops. Our harvest has increased by 40% since we started using the bio-slurry.",
       highlight: "40% increase in crop yield",
     },
-    // {
-    //   name: "Sister Agnes Mukamana",
-    //   role: "School Administrator",
-    //   location: "Huye, Rwanda",
-    //   image: "/OIP (1).webp",
-    //   rating: 5,
-    //   quote:
-    //     "Our school kitchen now runs on clean biogas, feeding 300 students daily. The children no longer suffer from smoke-related health issues, and we've reduced our energy costs significantly.",
-    //   highlight: "Serves 300+ students daily",
-    // },
-    // {
-    //   name: "Emmanuel Habimana",
-    //   role: "Restaurant Owner",
-    //   location: "Butare, Rwanda",
-    //   image: "/pacifique.jpg",
-    //   rating: 5,
-    //   quote:
-    //     "Since installing the biodigester system, our restaurant operates more efficiently. The consistent gas supply helps us serve customers better, and the cost savings have improved our profit margins.",
-    //   highlight: "Consistent energy supply",
-    // },
-    // {
-    //   name: "Grace Nyirahabimana",
-    //   role: "Community Leader",
-    //   location: "Nyagatare, Rwanda",
-    //   image: "/man-avatar-image-for-profile-png.webp",
-    //   rating: 5,
-    //   quote:
-    //     "Green Fuel has empowered our entire community. Twenty families now have biodigesters, creating local jobs and reducing our environmental impact. It's a true success story.",
-    //   highlight: "20 families empowered",
-    // },
   ]
 
   useEffect(() => {
@@ -180,7 +150,7 @@ export function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.div
+          {/* <motion.div
             className="inline-block mb-6"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -189,11 +159,11 @@ export function Testimonials() {
               <Star className="w-4 h-4 mr-2 fill-current" />
               Customer Stories
             </span>
-          </motion.div>
+          </motion.div> */}
 
           <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">
             <span className="bg-gradient-to-r from-green-700 via-emerald-600 to-green-800 bg-clip-text text-transparent">
-              What Our Customers Say
+             Testimonials
             </span>
           </h2>
 
@@ -204,7 +174,9 @@ export function Testimonials() {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Real stories from families and businesses who have transformed their lives with clean bio-energy.
+            Our goal is to continue offering excellent services and our customers’ reviews greatly
+            helps us to continue doing so.
+
           </motion.p>
         </motion.div>
 
@@ -384,20 +356,7 @@ export function Testimonials() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <motion.button
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span>Join Our Happy Customers</span>
-            <motion.div
-              className="ml-2"
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-            >
-              →
-            </motion.div>
-          </motion.button>
+         
         </motion.div>
       </div>
     </section>

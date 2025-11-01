@@ -34,87 +34,131 @@ export default function ProductsPage() {
   const products = [
     {
       id: 1,
-      name: "Geo-membrane Biodigester",
+      name: "Green Fuel for Communities",
       description:
-        "Advanced flexible biodigester system with high-quality geo-membrane technology for maximum efficiency and durability.",
+        "Green Fuel installs an all in one smart waste to gas underground and portable systems digester - installed with impurity gas purification and overall performance monitoring technology which provide household with clean, reliable cooking energy at all time of need.",
       features: [
-        "Flexible geo-membrane construction",
-        "High gas production efficiency",
-        "Weather-resistant materials",
-        "Easy installation and maintenance",
-        "10-year warranty",
-        "Suitable for households and small institutions",
+        "Portable systems",
+        "Installation 3 to 10 days",
+        "Removable",
+        "Available in sizes 8 to 180 cubic meters",
+        "Easy to Installation",
+        "High Quality Materials",
+        "10 -15 years of use",
+        "Underground system",
+        "Installation 14 to a month",
+        "Non - removable",
+        "Concrete and Stone Build",
+        "Cost Effective",
+        "Available in size 8 – 50 Cubic Meters",
+        "20 -25years of use",
       ],
-      capacity: "8-50 cubic meters",
+      capacity: "",
       icon: Droplets,
       badge: "Most Popular",
       image: "/bg4.jpg",
       gradient: "from-green-500/20 to-emerald-600/20",
-      // price: "From $2,500",
-      installTime: "3-5 days",
+      installTime: "",
+      systemTypes: {
+        portable: {
+          installation: "3 to 10 days",
+          removable: "Removable",
+          capacity: "8 to 180 cubic meters",
+          materials: "High Quality Materials",
+          lifespan: "10 -15 years of use"
+        },
+        underground: {
+          installation: "14 to a month",
+          removable: "Non - removable",
+          capacity: "8 – 50 Cubic Meters",
+          build: "Concrete and Stone Build",
+          costEffective: "Cost Effective",
+          lifespan: "20 -25years of use"
+        }
+      }
     },
     {
       id: 2,
-      name: "Fixed Dome Biodigester",
-      description: "Robust concrete biodigester designed for long-term performance and higher capacity applications.",
+      name: "Green Fuel for Institution",
+      description: "Green Fuel installs an all in one smart waste to gas underground and portable systems digester - installed with impurity gas purification and overall performance monitoring technology which provide schools, and processing companies with affordable, clean, reliable cooking energy at all time of need.",
       features: [
-        "Reinforced concrete construction",
-        "Permanent installation",
-        "High capacity output",
-        "Minimal maintenance required",
-        "25-year lifespan",
-        "Ideal for large institutions",
+        "Portable systems",
+        "Removable",
+        "Available in sizes 8 to 240 cubic meters",
+        "Easy to Installation",
+        "High Quality Materials",
+        "10 -15 years of use",
+        "Underground system",
+        "Non - removable",
+        "Concrete and Stone Build",
+        "Cost Effective",
+        "Available in size 8 – 200 Cubic Meters",
+        "20 -25years of use",
       ],
-      capacity: "8-50 cubic meters",
+      capacity: "",
       icon: Shield,
       badge: "Heavy Duty",
-      image: "/bg2.jpg",
+      image: "/greenfuelforInstutition.jpg",
       gradient: "from-blue-500/20 to-cyan-600/20",
-      // price: "From $5,000",
-      installTime: "7-10 days",
+      installTime: "",
+      systemTypes: {
+        portable: {
+          removable: "Removable",
+          capacity: "8 to 240 cubic meters",
+          installation: "Easy to Installation",
+          materials: "High Quality Materials",
+          lifespan: "10 -15 years of use"
+        },
+        underground: {
+          removable: "Non - removable",
+          capacity: "8 – 200 Cubic Meters",
+          build: "Concrete and Stone Build",
+          costEffective: "Cost Effective",
+          lifespan: "20 -25years of use"
+        }
+      }
     },
     {
       id: 3,
-      name: "Installation & Maintenance",
+      name: "Green Fuel for reliance",
       description:
-        "Comprehensive services including professional installation, regular monitoring, and proactive maintenance to keep systems running smoothly.",
+        "Through a flexible and affordable yearly subscription model. Green Fuel provide on time maintenance service keeping systems runs smoothly.",
       features: [
-        "Professional Installation",
-        "Regular Monitoring",
-        "Proactive Maintenance",
-        "Long-term Support",
-        "Emergency Response",
-        "Performance Optimization",
+        "Flexible and affordable yearly subscription model",
+        "On time maintenance service",
+        "Keeping systems runs smoothly",
+        "Regular system monitoring",
+        "Performance optimization",
+        "Technical support",
       ],
-      capacity: "All System Types",
+      capacity: "",
       icon: Wrench,
       badge: "Full Service",
-      image: "/installation.jpg",
+      image: "/installationnew.jpg",
       gradient: "from-orange-500/20 to-amber-600/20",
-      // price: "From $500/year",
-      installTime: "Ongoing",
+      installTime: "",
     },
   ]
 
   const services = [
     {
       name: "Site Assessment",
-      description: "Comprehensive evaluation of your location to determine the optimal biodigester solution.",
+      description: "Comprehensive evaluation of user’s location, type and quantity of waste generated every day to determine the optimal biodigester type and size needed.",
       icon: CheckCircle,
     },
     {
       name: "Professional Installation",
-      description: "Expert installation by certified technicians ensuring optimal performance and safety.",
+      description: "Our certified team of field technician installs the system with quality, efficiency and long lasting as fore front motivation.",
       icon: Wrench,
     },
     {
-      name: "Training & Support",
-      description: "Complete training on operation and maintenance with ongoing technical support.",
+      name: "User Training",
+      description: "Complete training on system handling ensuring correct rules of use are followed for optimal daily energy production.",
       icon: Zap,
     },
     {
-      name: "Maintenance Services",
-      description: "Regular maintenance and repair services to ensure long-term optimal performance.",
+      name: "Activation",
+      description: "Daily cooking using the generated clean gas.",
       icon: Recycle,
     },
   ]
@@ -158,8 +202,8 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-green-50/30 to-emerald-50/20">
       <Header />
       <PageBanner
-        title="Our Products and Services"
-        subtitle="Comprehensive bio-digester solutions designed to meet your specific energy needs"
+        title=""
+        subtitle=""
         backgroundImage="/WhatsApp Image 2025-09-05 at 20.02.47_3ec366e9.jpg"
       />
 
@@ -178,10 +222,10 @@ export default function ProductsPage() {
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-6">
                 Our Premium Solutions
               </h2>
-              <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
+              {/* <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
                 Discover our complete range of biodigester systems and services, designed to meet every energy need from
                 households to large institutions.
-              </p>
+              </p> */}
               <div className="w-32 h-1 bg-gradient-to-r from-green-500 to-teal-600 mx-auto rounded-full mt-6"></div>
             </div>
 
@@ -238,11 +282,11 @@ export default function ProductsPage() {
                       {/* Specifications */}
                       <div className="space-y-2">
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-gray-500">Capacity:</span>
+                          <span className="text-gray-500"></span>
                           <span className="font-semibold text-green-700">{product.capacity}</span>
                         </div>
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-gray-500">Installation:</span>
+                          <span className="text-gray-500"></span>
                           <span className="font-semibold text-blue-700">{product.installTime}</span>
                         </div>
                         <div className="flex items-center justify-between text-sm">
@@ -253,17 +297,94 @@ export default function ProductsPage() {
                     </CardHeader>
 
                     <CardContent className="relative z-10 pt-0">
-                      <div className="space-y-2 mb-6">
-                        {product.features.slice(0, 4).map((feature, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-center text-sm text-gray-600 transform transition-all duration-300 hover:translate-x-2"
-                          >
-                            <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mr-3 animate-pulse" />
-                            {feature}
+                      {product.systemTypes ? (
+                        <div className="space-y-4 mb-6">
+                          {/* Portable Systems */}
+                          <div className="bg-green-50 rounded-lg p-4">
+                            <h4 className="font-semibold text-green-800 mb-2 flex items-center">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
+                              Portable systems
+                            </h4>
+                            <div className="space-y-1 text-xs text-gray-600">
+                              {product.id === 1 && (
+                                <>
+                                  <div>• Installation 3 to 10 days</div>
+                                  <div>• Removable</div>
+                                  <div>• Available in sizes 8 to 180 cubic meters</div>
+                                  <div>• Easy to Installation</div>
+                                  <div>• High Quality Materials</div>
+                                  <div>• 10 -15 years of use</div>
+                                </>
+                              )}
+                              {product.id === 2 && (
+                                <>
+                                  <div>• Removable</div>
+                                  <div>• Available in sizes 8 to 240 cubic meters</div>
+                                  <div>• Easy to Installation</div>
+                                  <div>• High Quality Materials</div>
+                                  <div>• 10 -15 years of use</div>
+                                </>
+                              )}
+                            </div>
                           </div>
-                        ))}
-                      </div>
+                          
+                          {/* Underground Systems */}
+                          <div className="bg-blue-50 rounded-lg p-4">
+                            <h4 className="font-semibold text-blue-800 mb-2 flex items-center">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                              Underground system
+                            </h4>
+                            <div className="space-y-1 text-xs text-gray-600">
+                              {product.id === 1 && (
+                                <>
+                                  <div>• Installation 14 to a month</div>
+                                  <div>• Non - removable</div>
+                                  <div>• Concrete and Stone Build</div>
+                                  <div>• Cost Effective</div>
+                                  <div>• Available in size 8 – 50 Cubic Meters</div>
+                                  <div>• 20 -25years of use</div>
+                                </>
+                              )}
+                              {product.id === 2 && (
+                                <>
+                                  <div>• Non - removable</div>
+                                  <div>• Concrete and Stone Build</div>
+                                  <div>• Cost Effective</div>
+                                  <div>• Available in size 8 – 200 Cubic Meters</div>
+                                  <div>• 20 -25years of use</div>
+                                </>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="space-y-4 mb-6">
+                          {/* For Green Fuel for reliance - show both system support */}
+                          <div className="bg-green-50 rounded-lg p-4">
+                            <h4 className="font-semibold text-green-800 mb-2 flex items-center">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
+                              Portable systems maintenance
+                            </h4>
+                            <div className="space-y-1 text-xs text-gray-600">
+                              <div>• Flexible yearly subscription model</div>
+                              <div>• On time maintenance service</div>
+                              <div>• Performance monitoring</div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-blue-50 rounded-lg p-4">
+                            <h4 className="font-semibold text-blue-800 mb-2 flex items-center">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                              Underground system maintenance
+                            </h4>
+                            <div className="space-y-1 text-xs text-gray-600">
+                              <div>• Comprehensive maintenance service</div>
+                              <div>• Keeping systems runs smoothly</div>
+                              <div>• Technical support</div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
 
                       <Button
                         onClick={() => handleGetQuote(product)}
@@ -350,14 +471,74 @@ export default function ProductsPage() {
                             </CardHeader>
 
                             <CardContent className="space-y-4">
-                              <div className="space-y-2">
-                                {product.features.slice(0, 4).map((feature, idx) => (
-                                  <div key={idx} className="flex items-center text-sm text-gray-600">
-                                    <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full mr-3" />
-                                    {feature}
+                              {product.systemTypes ? (
+                                <div className="space-y-3">
+                                  {/* Portable Systems */}
+                                  <div className="bg-green-50 rounded-lg p-3">
+                                    <h4 className="font-semibold text-green-800 mb-2 text-sm flex items-center">
+                                      <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
+                                      Portable systems
+                                    </h4>
+                                    <div className="space-y-1 text-xs text-gray-600">
+                                      {product.id === 1 && (
+                                        <>
+                                          <div>• Installation 3 to 10 days</div>
+                                          <div>• Removable</div>
+                                          <div>• 8 to 180 cubic meters</div>
+                                          <div>• 10 -15 years of use</div>
+                                        </>
+                                      )}
+                                      {product.id === 2 && (
+                                        <>
+                                          <div>• Removable</div>
+                                          <div>• 8 to 240 cubic meters</div>
+                                          <div>• 10 -15 years of use</div>
+                                        </>
+                                      )}
+                                    </div>
                                   </div>
-                                ))}
-                              </div>
+                                  
+                                  {/* Underground Systems */}
+                                  <div className="bg-blue-50 rounded-lg p-3">
+                                    <h4 className="font-semibold text-blue-800 mb-2 text-sm flex items-center">
+                                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                                      Underground system
+                                    </h4>
+                                    <div className="space-y-1 text-xs text-gray-600">
+                                      {product.id === 1 && (
+                                        <>
+                                          <div>• Installation 14 to a month</div>
+                                          <div>• Non - removable</div>
+                                          <div>• 8 – 50 Cubic Meters</div>
+                                          <div>• 20 -25years of use</div>
+                                        </>
+                                      )}
+                                      {product.id === 2 && (
+                                        <>
+                                          <div>• Non - removable</div>
+                                          <div>• 8 – 200 Cubic Meters</div>
+                                          <div>• 20 -25years of use</div>
+                                        </>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="space-y-3">
+                                  <div className="bg-green-50 rounded-lg p-3">
+                                    <h4 className="font-semibold text-green-800 mb-2 text-sm flex items-center">
+                                      <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
+                                      Portable systems maintenance
+                                    </h4>
+                                  </div>
+                                  <div className="bg-blue-50 rounded-lg p-3">
+                                    <h4 className="font-semibold text-blue-800 mb-2 text-sm flex items-center">
+                                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                                      Underground system maintenance
+                                    </h4>
+                                  </div>
+                                </div>
+                              )}
 
                               <Button
                                 onClick={() => handleGetQuote(product)}
@@ -400,16 +581,6 @@ export default function ProductsPage() {
                   />
                 ))}
               </div>
-            </div>
-
-            <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-green-600 to-emerald-700 text-white hover:from-green-700 hover:to-emerald-800 transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl px-8 py-4 text-lg group"
-              >
-                View Detailed Specifications
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
             </div>
           </div>
         </section>
@@ -501,7 +672,7 @@ export default function ProductsPage() {
                     size="lg"
                     className="bg-white text-green-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
-                    Get Free Quote
+                    Contact Us
                   </Button>
                   <Button
                     onClick={() => setIsBookingOpen(true)}
@@ -512,9 +683,6 @@ export default function ProductsPage() {
                     Schedule Consultation
                   </Button>
                 </div>
-                <p className="text-green-100/80 text-sm mt-6 font-medium">
-                  Free consultation • Expert guidance • Custom solutions for your energy needs
-                </p>
               </CardContent>
             </Card>
           </div>

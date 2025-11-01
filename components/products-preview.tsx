@@ -93,7 +93,7 @@ export function ProductsPreview() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16 transform transition-all duration-1000 ease-out">
             <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-700 bg-clip-text text-transparent mb-6 text-balance">
-              Our Products and Services
+              Our Solutions and Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto text-pretty leading-relaxed">
               Flexible bio-energy solutions tailored to your specific needs, from small households to large

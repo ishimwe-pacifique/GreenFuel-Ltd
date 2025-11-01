@@ -293,7 +293,7 @@ export default function NewsPage() {
                   Stay Updated with Green Fuel
                 </h2>
                 <p className="text-xl text-green-100 mb-10 max-w-3xl mx-auto leading-relaxed font-medium">
-                  Subscribe to our newsletter to receive the latest news, updates, and insights about clean energy
+                  Subscribe to our newsletter to receive the latest news, updates, and about clean energy
                   solutions and our impact in the community.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
@@ -306,9 +306,6 @@ export default function NewsPage() {
                     Subscribe
                   </Button>
                 </div>
-                <p className="text-green-100/80 text-sm mt-4 font-medium">
-                  Join 2,000+ subscribers already staying informed about clean energy innovations
-                </p>
               </CardContent>
             </Card>
           </div>

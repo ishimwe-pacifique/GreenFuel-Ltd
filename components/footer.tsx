@@ -22,8 +22,7 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-300 leading-relaxed text-base">
-              Transforming waste into clean energy across Africa. Empowering communities with sustainable bio-energy
-              solutions for a greener future.
+              Transforming waste into clean, affordable and reliable cooking energy for all.
             </p>
             <div className="flex space-x-3">
   <a href="https://www.facebook.com/share/1Eas7LWbMS/" target="_blank" rel="noopener noreferrer">
@@ -118,8 +117,8 @@ export function Footer() {
               <div className="flex items-start space-x-3 group">
                 <MapPin className="h-5 w-5 text-green-500 mt-0.5 group-hover:scale-110 transition-transform" />
                 <div>
-                  <span className="text-gray-300 text-base">Nyagatare, Rwanda</span>
-                  <p className="text-gray-400 text-sm mt-1">East Africa</p>
+                  <span className="text-gray-300 text-base">Kigali, Rwanda</span>
+                  <p className="text-gray-400 text-sm mt-1"> Nyagatare</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 group">
@@ -140,7 +139,7 @@ export function Footer() {
               <div className="absolute -bottom-1 left-0 w-12 h-0.5 bg-green-500"></div>
             </h3>
             <p className="text-gray-300 text-base leading-relaxed">
-              Subscribe to our newsletter for the latest updates on clean energy solutions and sustainability news.
+              Subscribe to our newsletter for the latest updates.
             </p>
             <div className="space-y-4">
               <Input
@@ -162,7 +161,7 @@ export function Footer() {
                 © 2025 Green Fuel Ltd. All rights reserved.
               </p>
               <p className="text-green-400 font-medium text-base">
-                Empowering Africa with clean energy solutions 🌱
+                Empowering African Community with clean Cooking energy solutions 🌱
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-base">

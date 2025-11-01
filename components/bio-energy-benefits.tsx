@@ -14,7 +14,7 @@ export function BioEnergyBenefits() {
       icon: Leaf,
       title: "Environmental Impact",
       description:
-        "Reduces greenhouse gas emissions by capturing methane from biodegradable wastes and turning it into useful cooking and lighting energy.",
+        ": we reduce greenhouse gas emissions by reducing biomass fuels reliance and by turning harmful methane from biodegradable wastes into useful cooking gas.",
       color: "text-green-600",
       bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
       gradient: "from-emerald-500/20 to-green-600/20",
@@ -23,7 +23,7 @@ export function BioEnergyBenefits() {
       icon: DollarSign,
       title: "Cost Saving",
       description:
-        "Lowers household energy bills by providing renewable alternative on a long run, making clean energy affordable for everyone.",
+        "10 – 20 years guarantee of slashing household and institution cooking energy bills.",
       color: "text-green-600",
       bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
       gradient: "from-yellow-500/20 to-green-600/20",
@@ -32,7 +32,7 @@ export function BioEnergyBenefits() {
       icon: Sprout,
       title: "Agricultural Benefits",
       description:
-        "The waste to energy transition generates very rich nutritious fertilizer as byproduct that boosts crop yields significantly.",
+        "The waste to energy transition of our solution, generates a nutritious fertilizer as byproduct that boosts crop yields significantly.",
       color: "text-green-600",
       bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
       gradient: "from-lime-500/20 to-green-600/20",
@@ -41,7 +41,7 @@ export function BioEnergyBenefits() {
       icon: Heart,
       title: "Health Benefits",
       description:
-        "Produces clean bio-energy that reduces indoor air pollution, improving respiratory health compared to firewood and charcoal fuels.",
+        "We empower kitchen with smoke-free, clean gas that cause no harm to respiratory health compared to firewood and charcoal fuels.",
       color: "text-green-600",
       bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
       gradient: "from-pink-500/20 to-green-600/20",
@@ -112,7 +112,7 @@ export function BioEnergyBenefits() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.div
+          {/* <motion.div
             className="inline-block mb-6"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -121,7 +121,7 @@ export function BioEnergyBenefits() {
               <Leaf className="w-4 h-4 mr-2" />
               Sustainable Solutions
             </span>
-          </motion.div>
+          </motion.div> */}
 
           <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">
             <span className="bg-gradient-to-r from-green-700 via-emerald-600 to-green-800 bg-clip-text text-transparent">
@@ -129,7 +129,7 @@ export function BioEnergyBenefits() {
             </span>
           </h2>
 
-          <motion.p
+          {/* <motion.p
             className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -137,7 +137,7 @@ export function BioEnergyBenefits() {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             Discover the transformative benefits of bio-energy for your family, community, and the environment.
-          </motion.p>
+          </motion.p> */}
         </motion.div>
 
         <motion.div
