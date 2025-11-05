@@ -55,7 +55,7 @@ export default function ProductsPage() {
       ],
       capacity: "",
       icon: Droplets,
-      badge: "Most Popular",
+      // badge: "Most Popular",
       image: "/bg4.jpg",
       gradient: "from-green-500/20 to-emerald-600/20",
       installTime: "",
@@ -97,7 +97,7 @@ export default function ProductsPage() {
       ],
       capacity: "",
       icon: Shield,
-      badge: "Heavy Duty",
+      // badge: "Heavy Duty",
       image: "/greenfuelforInstutition.jpg",
       gradient: "from-blue-500/20 to-cyan-600/20",
       installTime: "",
@@ -133,7 +133,7 @@ export default function ProductsPage() {
       ],
       capacity: "",
       icon: Wrench,
-      badge: "Full Service",
+      // badge: "Full Service",
       image: "/installationnew.jpg",
       gradient: "from-orange-500/20 to-amber-600/20",
       installTime: "",
@@ -590,12 +590,12 @@ export default function ProductsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-6">
-                Installation Services
+                How these solution works
               </h2>
-              <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
+              {/* <p className="text-xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed font-medium">
                 Complete end-to-end service from initial assessment to ongoing maintenance, ensuring your biodigester
                 system performs optimally for years to come.
-              </p>
+              </p> */}
               <div className="w-32 h-1 bg-gradient-to-r from-green-500 to-teal-600 mx-auto rounded-full mt-6"></div>
             </div>
 
