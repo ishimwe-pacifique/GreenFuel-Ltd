@@ -16,14 +16,14 @@ export function CoreValues() {
       icon: Target,
       title: "Impact Driven",
       description:
-        "We are focused on cultivating positive change by lowering emission, making clean and affordable cooking energy accessible for all while also creating jobs for women and youth in the sector.",
+        "We make biogas affordable and accessible for everyone through onsite installed digester and biogas storage powered by modern scalable digital technologies.",
       color: "from-emerald-500 to-teal-600",
       image: "/coreValuebackground.jpg",
     },
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "In our solution, technology powers every flame - from anaerobic digestion technology to system digester digital monitoring – Powered by IOT technology tracking performances and output prediction - ensuring gas never runs out.",
+      description: "We make biogas affordable and accessible for everyone through onsite installed digester and biogas storage powered by modern scalable digital technologies.",
       color: "from-amber-500 to-orange-600",
       image: "/coreValuebackground.jpg",
     },

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "Transform waste into clean energy with Green Fuel Ltd. We specialize in bio-digesters that convert biodegradable waste into efficient bio-energy for households and institutions across Africa.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/WhatsApp Image 2025-09-02 at 14.14.40_9618baaa.jpg",
+  },
 }
 
 export default function RootLayout({

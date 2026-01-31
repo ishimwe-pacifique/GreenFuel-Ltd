@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -6,175 +8,121 @@ import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "luc
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 lg:gap-12">
+    <footer className="bg-[#001a3d] text-white overflow-hidden">
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+        
+        .footer-font {
+          font-family: 'Montserrat', sans-serif;
+        }
+      `}</style>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 footer-font">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 lg:gap-16">
+          
           {/* Company Info */}
-          <div className="space-y-6 lg:col-span-1">
-            <div className="bg-white p-3 rounded-lg inline-block">
+          <div className="space-y-8">
+            <div className="bg-white p-4 inline-block shadow-xl">
               <Image
                 src="/images/WhatsApp Image 2025-09-02 at 14.14.40_9618baaa.jpg"
                 alt="Green Fuel Ltd"
-                width={160}
-                height={60}
+                width={180}
+                height={70}
                 className="h-12 w-auto object-contain"
                 priority
               />
             </div>
-            <p className="text-gray-300 leading-relaxed text-base">
-              Transforming waste into clean, affordable and reliable cooking energy for all.
+            <p className="text-gray-300 leading-relaxed font-medium text-sm">
+              Transforming lives through clean, affordable cooking energy access made from local organic wastes.
             </p>
             <div className="flex space-x-3">
-  <a href="https://www.facebook.com/share/1Eas7LWbMS/" target="_blank" rel="noopener noreferrer">
-    <Button 
-      size="sm" 
-      variant="ghost" 
-      className="text-white hover:bg-white/10 hover:text-green-400 transition-colors p-2 rounded-full"
-    >
-      <Facebook className="h-5 w-5" />
-    </Button>
-  </a>
-
-  <a href="https://x.com/Green_Fuel_ltd?t=jPJ9BthQ-yDhUakdueeb9Q&s=09" target="_blank" rel="noopener noreferrer">
-    <Button 
-      size="sm" 
-      variant="ghost" 
-      className="text-white hover:bg-white/10 hover:text-green-400 transition-colors p-2 rounded-full"
-    >
-      <Twitter className="h-5 w-5" />
-    </Button>
-  </a>
-
-  <a href="https://www.linkedin.com/company/green-fuel-ltd/" target="_blank" rel="noopener noreferrer">
-    <Button 
-      size="sm" 
-      variant="ghost" 
-      className="text-white hover:bg-white/10 hover:text-green-400 transition-colors p-2 rounded-full"
-    >
-      <Linkedin className="h-5 w-5" />
-    </Button>
-  </a>
-
-  <a href="https://www.instagram.com/green_fuel_ltd?igsh=ZzJzaml0dHFhYWY=" target="_blank" rel="noopener noreferrer">
-    <Button 
-      size="sm" 
-      variant="ghost" 
-      className="text-white hover:bg-white/10 hover:text-green-400 transition-colors p-2 rounded-full"
-    >
-      <Instagram className="h-5 w-5" />
-    </Button>
-  </a>
-</div>
-</div>
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/share/1Eas7LWbMS/" },
+                { Icon: Twitter, href: "https://x.com/Green_Fuel_ltd?t=jPJ9BthQ-yDhUakdueeb9Q&s=09" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/green-fuel-ltd/" },
+                { Icon: Instagram, href: "https://www.instagram.com/green_fuel_ltd?igsh=ZzJzaml0dHFhYWY=" }
+              ].map((social, i) => (
+                <a key={i} href={social.href} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="sm" 
+                    variant="ghost" 
+                    className="bg-white/5 text-white hover:bg-green-600 hover:text-white transition-all p-2 rounded-none border border-white/10"
+                  >
+                    <social.Icon className="h-5 w-5" />
+                  </Button>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-white relative">
-              Quick Links
-              <div className="absolute -bottom-1 left-0 w-12 h-0.5 bg-green-500"></div>
+          <div className="space-y-8">
+            <h3 className="text-sm font-extrabold tracking-[0.3em] uppercase text-green-500">
+              Navigation
             </h3>
             <nav className="flex flex-col space-y-4">
-              <Link 
-                href="/about" 
-                className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
-              >
-                About Us
-              </Link>
-              <Link 
-                href="/products" 
-                className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
-              >
-                Our Products
-              </Link>
-              <Link 
-                href="/news" 
-                className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
-              >
-                News & Updates
-              </Link>
-              <Link 
-                href="/contact" 
-                className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
-              >
-                Contact Us
-              </Link>
-              <Link 
-                href="#" 
-                className="text-gray-300 hover:text-green-400 transition-colors text-base hover:translate-x-1 transform duration-200"
-              >
-                Careers
-              </Link>
+              {["About Us", "Our Products", "News", "Contact Us"].map((link) => (
+                <Link 
+                  key={link}
+                  href={`/${link.toLowerCase().replace(" ", "")}`} 
+                  className="text-gray-300 hover:text-white transition-all text-xs font-bold tracking-widest uppercase hover:translate-x-2 transform duration-300"
+                >
+                  {link}
+                </Link>
+              ))}
             </nav>
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-white relative">
-              Contact Info
-              <div className="absolute -bottom-1 left-0 w-12 h-0.5 bg-green-500"></div>
+          <div className="space-y-8">
+            <h3 className="text-sm font-extrabold tracking-[0.3em] uppercase text-green-500">
+              Get In Touch
             </h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3 group">
-                <MapPin className="h-5 w-5 text-green-500 mt-0.5 group-hover:scale-110 transition-transform" />
-                <div>
-                  <span className="text-gray-300 text-base">Kigali, Rwanda</span>
-                  <p className="text-gray-400 text-sm mt-1"> Nyagatare</p>
-                </div>
+            <div className="space-y-5">
+              <div className="flex items-start space-x-4">
+                <MapPin className="h-5 w-5 text-green-500 shrink-0" />
+                <span className="text-gray-300 text-sm font-bold tracking-tight">Nyagatare, Kigali, Rwanda</span>
               </div>
-              <div className="flex items-center space-x-3 group">
-                <Phone className="h-5 w-5 text-green-500 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-base">+250 789 374 747</span>
+              <div className="flex items-center space-x-4">
+                <Phone className="h-5 w-5 text-green-500 shrink-0" />
+                <span className="text-gray-300 text-sm font-bold">+250 789 374 747</span>
               </div>
-              <div className="flex items-center space-x-3 group">
-                <Mail className="h-5 w-5 text-green-500 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-base">info1.greenfuel @gmail.com</span>
+              <div className="flex items-center space-x-4">
+                <Mail className="h-5 w-5 text-green-500 shrink-0" />
+                <span className="text-gray-300 text-sm font-bold">info1.greenfuel@gmail.com</span>
               </div>
             </div>
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-white relative">
-              Stay Updated
-              <div className="absolute -bottom-1 left-0 w-12 h-0.5 bg-green-500"></div>
+          <div className="space-y-8">
+            <h3 className="text-sm font-extrabold tracking-[0.3em] uppercase text-green-500">
+              Newsletter
             </h3>
-            <p className="text-gray-300 text-base leading-relaxed">
-              Subscribe to our newsletter for the latest updates.
+            <p className="text-gray-300 text-xs font-medium leading-relaxed">
+              Stay updated with our latest sustainable energy solutions.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <Input
-                placeholder="Enter your email address"
-                className="bg-white/5 border-gray-600 text-white placeholder:text-gray-400 focus:border-green-500 focus:ring-green-500 h-12"
+                placeholder="EMAIL ADDRESS"
+                className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-green-500 rounded-none h-12 text-[10px] font-bold tracking-widest"
               />
-              <Button className="w-full bg-green-600 text-white hover:bg-green-700 transition-colors h-12 font-semibold">
-                Subscribe Now
+              <Button className="w-full bg-green-600 text-white hover:bg-green-700 rounded-none h-12 text-[10px] font-extrabold tracking-[0.2em] uppercase transition-all shadow-lg">
+                Subscribe
               </Button>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10 mt-20 pt-10 backdrop-blur-sm">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            <div className="text-center md:text-left">
-              <p className="text-gray-400 text-lg mb-2">
-                © 2025 Green Fuel Ltd. All rights reserved.
-              </p>
-              <p className="text-green-400 font-medium text-base">
-                Empowering African Community with clean Cooking energy solutions 🌱
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-base">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200 text-center">
-                Sustainability Report
-              </Link>
-            </div>
+        <div className="border-t border-white/10 mt-20 pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
+            <p className="text-gray-500 text-[10px] font-bold tracking-widest uppercase">
+              © 2026 Green Fuel Ltd. All rights reserved.
+            </p>
+            {/* <p className="text-gray-500 text-[10px] font-bold tracking-widest uppercase italic">
+              Empowering Communities via Clean Energy solutions 🌱
+            </p> */}
           </div>
         </div>
       </div>

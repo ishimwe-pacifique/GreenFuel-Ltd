@@ -33,9 +33,18 @@ export default function ProblemSolution() {
               The Problem
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-transparent via-green-500 to-transparent mx-auto mb-6" />
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
-              Across Africa, many households still depend on traditional cooking fuels that harm both the user and the planet. These fuels produce dangerous indoor air pollution, leading to serious health issues and contributing to climate change. Despite the high cost and impact of traditional fuels like charcoal, and firewood clean and affordable alternatives remain out of reach for most families—especially in places like Rwanda
-            </p>
+            <p className="text-xl text-gray-700 w-full text-left leading-relaxed font-medium">
+  In rural and peri-urban Rwanda, households and different public places like 
+  markets are surrounded by organic wastes potential, yet over 70% of kitchens 
+  remain filled with acrid smoke. 
+  <br /><br />
+  A sustainable solution to close this problem is through utilizing waste to 
+  fuel the kitchen. Traditional waste-to-energy solutions have historically 
+  failed the people they intended to serve due to high upfront installation 
+  costs of digesters or technical failure due to lack of after-sale follow-up, 
+  forcing families to spend a massive portion of their income on fuels that 
+  are costly, harm their health, and damage the environment.
+</p>
           </div>
 
           {/* Problem Content and Image Side by Side */}
@@ -96,9 +105,17 @@ export default function ProblemSolution() {
             Solution
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-transparent via-green-500 to-transparent mx-auto mb-6" />
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
-              Green Fuel aims to reduce biomass fuels consumption in Rwanda. We do this through the installation of smart digesters that turn biodegradable wastes into cooking gas.
-            </p>
+         <p className="text-xl text-gray-700 w-full text-left leading-relaxed font-medium">
+  Green Fuel is a Rwandan social Business pioneering the Biogas-as-a-Service model. 
+  We provide clean, safe, and affordable cooking biogas through a digital 
+  "pay-as-you-cook" approach, restoring dignity to the kitchen while creating 
+  jobs and abating thousand of emissions.
+  <br /><br />
+  By eliminating the substantial upfront cost of installing digesters for our 
+  customers and the inability to efficiently capture, store the produced energy. 
+  Green Fuel offers a cooking energy alternative that is convenient, safe to 
+  use and beneficial for respiratory health and the environment.
+</p>
           </div>
 
           {/* Solution Content and Image Side by Side */}

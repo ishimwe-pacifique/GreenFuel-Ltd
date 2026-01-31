@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Leaf, DollarSign, Sprout, Heart } from "lucide-react"
+import { DollarSign, Activity, CreditCard, HeartPulse, ArrowUpRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import Link from "next/link"
@@ -11,250 +11,115 @@ export function BioEnergyBenefits() {
 
   const benefits = [
     {
-      icon: Leaf,
-      title: "Environmental Impact",
-      description:
-        ": we reduce greenhouse gas emissions by reducing biomass fuels reliance and by turning harmful methane from biodegradable wastes into useful cooking gas.",
-      color: "text-green-600",
-      bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
-      gradient: "from-emerald-500/20 to-green-600/20",
-    },
-    {
       icon: DollarSign,
-      title: "Cost Saving",
-      description:
-        "10 – 20 years guarantee of slashing household and institution cooking energy bills.",
-      color: "text-green-600",
-      bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
-      gradient: "from-yellow-500/20 to-green-600/20",
+      title: "AFFORDABILITY",
+      description: "Save up to 60% on cooking costs compared to traditional charcoal and wood.",
+      bgImage: "/smilemum.jpeg",
     },
     {
-      icon: Sprout,
-      title: "Agricultural Benefits",
-      description:
-        "The waste to energy transition of our solution, generates a nutritious fertilizer as byproduct that boosts crop yields significantly.",
-      color: "text-green-600",
-      bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
-      gradient: "from-lime-500/20 to-green-600/20",
+      icon: Activity,
+      title: "RELIABILITY",
+      description: "Real-time digital monitoring provides instant alerts, ensuring your clean gas supply never runs out.",
+      bgImage: "/smilemum.jpeg",
     },
     {
-      icon: Heart,
-      title: "Health Benefits",
-      description:
-        "We empower kitchen with smoke-free, clean gas that cause no harm to respiratory health compared to firewood and charcoal fuels.",
-      color: "text-green-600",
-      bgImage: "/WhatsApp Image 2025-09-02 at 14.14.40_097bddf6.jpg",
-      gradient: "from-pink-500/20 to-green-600/20",
+      icon: CreditCard,
+      title: "ACCESSIBILITY",
+      description: "We've removed the high upfront cost barrier with our flexible, digital pay-as-you-cook model.",
+      bgImage: "/smilemum.jpeg",
+    },
+    {
+      icon: HeartPulse,
+      title: "HEALTH & SAFETY",
+      description: "Eliminate toxic smoke and soot for a safer, lung-friendly kitchen environment.",
+      bgImage: "/smilemum.jpeg",
     },
   ]
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
-      },
-    },
-  }
-
-  const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-      scale: 0.9,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-        duration: 0.6,
-      },
-    },
-  }
-
   return (
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-white">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-green-400/20 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [-20, 20, -20],
-              x: [-10, 10, -10],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
+    <section className="relative py-32 bg-white overflow-hidden">
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .montserrat-bold { font-family: 'Montserrat', sans-serif; font-weight: 800; }
+      `}</style>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-20"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {/* <motion.div
-            className="inline-block mb-6"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 text-green-800 text-sm font-medium border border-green-200">
-              <Leaf className="w-4 h-4 mr-2" />
-              Sustainable Solutions
-            </span>
-          </motion.div> */}
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Section Header */}
+        <div className="mb-20">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+           <h3 className="montserrat-bold text-lg lg:text-2xl text-[#002868] leading-none uppercase tracking-tighter">
+  Why Choosing <br /> Green Fuel products?
+</h3>
+            <div className="h-1.5 w-32 bg-green-500 mb-2" />
+          </div>
+        </div>
 
-          <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-balance">
-            <span className="bg-gradient-to-r from-green-700 via-emerald-600 to-green-800 bg-clip-text text-transparent">
-              Why Bio-Energy?
-            </span>
-          </h2>
-
-          {/* <motion.p
-            className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto text-pretty leading-relaxed"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            Discover the transformative benefits of bio-energy for your family, community, and the environment.
-          </motion.p> */}
-        </motion.div>
-
-        <motion.div
-          className="grid md:grid-cols-2 gap-8 lg:gap-12"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
+        {/* Benefits Grid */}
+        <div className="grid md:grid-cols-2 gap-10">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              variants={cardVariants}
-              whileHover={{
-                y: -10,
-                transition: { type: "spring", stiffness: 300 },
-              }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.8 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
+              className="relative group"
             >
-              <Card className="group relative overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 h-full">
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient}`} />
+              <Card className="relative h-[400px] overflow-hidden rounded-none border-0 shadow-2xl bg-[#001a3d]">
+                {/* Background Image Logic */}
+                <div className="absolute inset-0 transition-all duration-1000 ease-in-out group-hover:scale-110">
                   <img
-                    src={benefit.bgImage || "/placeholder.svg"}
+                    src={benefit.bgImage}
                     alt={benefit.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-white/90" />
+                  {/* Transition Overlay: From white/clean to dark/transparent */}
+                  <div className="absolute inset-0 bg-white/95 group-hover:bg-[#001a3d]/60 transition-all duration-700" />
                 </div>
 
-                <CardContent className="relative p-8 lg:p-10 h-full flex flex-col">
-                  <div className="flex items-start space-x-6 mb-6">
-                    <motion.div
-                      className="relative flex-shrink-0"
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
-                      <div className="relative bg-white rounded-2xl p-4 shadow-lg border-2 border-gray-100 group-hover:border-green-300 transition-colors duration-300">
-                        <benefit.icon className="h-8 w-8 text-black group-hover:text-white transition-colors duration-300" />
-                        <div className="absolute inset-0 bg-green-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        <benefit.icon className="absolute inset-0 m-4 h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      </div>
-                    </motion.div>
-
-                    <div className="flex-1 space-y-4">
-                      <motion.h3
-                        className="text-2xl lg:text-3xl font-bold text-gray-900 group-hover:text-green-800 transition-colors duration-300"
-                        layoutId={`title-${index}`}
-                      >
-                        {benefit.title}
-                      </motion.h3>
+                <CardContent className="relative h-full flex flex-col justify-between p-12 z-10">
+                  <div className="space-y-6">
+                    {/* Icon with Glassmorphism Effect */}
+                    <div className="relative h-16 w-16 flex items-center justify-center border-2 border-green-600 transition-all duration-500 group-hover:bg-green-600 group-hover:border-transparent group-hover:rotate-[360deg]">
+                      <benefit.icon className="h-7 w-7 text-green-700 transition-colors duration-500 group-hover:text-white" />
                     </div>
+
+                    <h4 className="montserrat-bold text-2xl tracking-widest text-[#002868] group-hover:text-white transition-colors duration-500 uppercase">
+                      {benefit.title}
+                    </h4>
+                    
+                    <p className="montserrat text-base font-semibold leading-relaxed text-gray-600 group-hover:text-gray-200 transition-colors duration-500">
+                      {benefit.description}
+                    </p>
                   </div>
 
-                  <motion.p
-                    className="text-gray-600 leading-relaxed text-lg group-hover:text-gray-700 transition-colors duration-300 flex-1"
-                    initial={{ opacity: 0.8 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    {benefit.description}
-                  </motion.p>
-
-                  <motion.div
-                    className="mt-6 h-1 bg-gray-200 rounded-full overflow-hidden"
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 + index * 0.1, duration: 0.8 }}
-                  >
-                    <motion.div
-                      className="h-full bg-gradient-to-r from-green-400 to-emerald-500 rounded-full origin-left"
-                      initial={{ scaleX: 0 }}
-                      animate={{ scaleX: hoveredIndex === index ? 1 : 0.7 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </motion.div>
+                  {/* Corner Accent */}
+                  <div className="flex justify-end opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="h-12 w-12 bg-white/20 backdrop-blur-md flex items-center justify-center">
+                       <ArrowUpRight className="text-white h-6 w-6" />
+                    </div>
+                  </div>
                 </CardContent>
-
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <motion.div
-                    className="w-3 h-3 bg-green-400 rounded-full"
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                  />
-                </div>
               </Card>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="text-center mt-20"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-         <Link href="/products">
-  <motion.button
-    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-    whileHover={{ scale: 1.05, y: -2 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <span>Learn More About Our Solutions</span>
-    <motion.div
-      className="ml-2"
-      animate={{ x: [0, 5, 0] }}
-      transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-    >
-      →
-    </motion.div>
-  </motion.button>
-</Link>
-        </motion.div>
+        {/* Call to Action - Professional Full-Width Style */}
+        <div className="mt-20 flex justify-center">
+          <Link href="/products" className="w-full max-w-2xl">
+            <motion.button
+              whileHover={{ backgroundColor: "#15803d", scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="montserrat-bold w-full bg-[#002868] text-white py-8 tracking-[0.3em] uppercase text-xs transition-all shadow-2xl border-b-8 border-[#001a3d]"
+            >
+              Learn More About Our Clean Energy Solutions
+            </motion.button>
+          </Link>
+        </div>
       </div>
     </section>
   )
