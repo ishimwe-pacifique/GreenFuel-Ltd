@@ -145,13 +145,13 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-[#001a3d]/20 group-hover:bg-transparent transition-colors" />
                 </div>
                 <CardHeader className="p-8 pb-0">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <product.icon className="h-6 w-6 text-green-600" />
-                    <span className="text-[10px] font-extrabold text-green-700 tracking-[0.2em] uppercase">{product.model}</span>
-                  </div>
-                  <CardTitle className="montserrat-bold text-xl text-[#002868] tracking-tight leading-tight uppercase">
+                  <CardTitle className="montserrat-bold text-xl text-[#002868] tracking-tight leading-tight uppercase mb-2">
                     {product.name}
                   </CardTitle>
+                  <div className="flex items-center space-x-3">
+                    <product.icon className="h-5 w-5 text-green-600" />
+                    <span className="text-[10px] font-extrabold text-green-700 tracking-[0.2em] uppercase">{product.model}</span>
+                  </div>
                 </CardHeader>
                 <CardContent className="p-8 pt-6 flex-1 flex flex-col">
                   <p className="text-sm font-medium text-gray-600 mb-8">{product.description}</p>
