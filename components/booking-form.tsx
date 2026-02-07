@@ -126,46 +126,18 @@ export function BookingForm({ isOpen, onClose, selectedProduct }: BookingFormPro
         <DialogHeader>
           <div className="flex items-center justify-between">
             <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent">
-              {selectedProduct ? `Get Quote for ${selectedProduct.name}` : "Request a Quote"}
+              {selectedProduct ? ` ${selectedProduct.name}` : "Request a Quote"}
             </DialogTitle>
-            <Button variant="ghost" size="sm" onClick={onClose} className="h-8 w-8 p-0 hover:bg-gray-100">
-              <X className="h-4 w-4" />
-            </Button>
+            
           </div>
-          {selectedProduct && (
-            <Card className="mt-4 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
-              <CardContent className="p-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-green-800">{selectedProduct.name}</h4>
-                    <p className="text-sm text-green-600">Capacity: {selectedProduct.capacity}</p>
-                  </div>
-                  <Badge className="bg-green-600 text-white">{selectedProduct.price}</Badge>
-                </div>
-              </CardContent>
-            </Card>
-          )}
+        
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-6 mt-6">
           {/* Service Type Selection */}
           <div className="grid grid-cols-2 gap-4">
-            <Button
-              type="button"
-              variant={formData.serviceType === "Quote Request" ? "default" : "outline"}
-              onClick={() => handleInputChange("serviceType", "Quote Request")}
-              className={formData.serviceType === "Quote Request" ? "bg-green-600 hover:bg-green-700" : ""}
-            >
-              Get Quote
-            </Button>
-            <Button
-              type="button"
-              variant={formData.serviceType === "Consultation" ? "default" : "outline"}
-              onClick={() => handleInputChange("serviceType", "Consultation")}
-              className={formData.serviceType === "Consultation" ? "bg-green-600 hover:bg-green-700" : ""}
-            >
-              Schedule Consultation
-            </Button>
+         
+         
           </div>
 
           {/* Personal Information */}
@@ -219,13 +191,13 @@ export function BookingForm({ isOpen, onClose, selectedProduct }: BookingFormPro
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value)}
                   className="mt-1"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+250 7XX XXX XXX"
                 />
               </div>
 
               <div>
                 <Label htmlFor="company" className="text-sm font-medium text-gray-700">
-                  Company/Organization
+                  District/Sector
                 </Label>
                 <Input
                   id="company"
@@ -233,114 +205,13 @@ export function BookingForm({ isOpen, onClose, selectedProduct }: BookingFormPro
                   value={formData.company}
                   onChange={(e) => handleInputChange("company", e.target.value)}
                   className="mt-1"
-                  placeholder="Optional"
+                  placeholder="e.g., Nyagatare/Rwimiyaga"
                 />
               </div>
             </div>
           </div>
 
-          {/* Project Details */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-              <MapPin className="h-5 w-5 mr-2 text-green-600" />
-              Project Details
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <Label htmlFor="projectLocation" className="text-sm font-medium text-gray-700">
-                  Project Location *
-                </Label>
-                <Input
-                  id="projectLocation"
-                  type="text"
-                  required
-                  value={formData.projectLocation}
-                  onChange={(e) => handleInputChange("projectLocation", e.target.value)}
-                  className="mt-1"
-                  placeholder="City, State/Province"
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="wasteType" className="text-sm font-medium text-gray-700">
-                  Waste Type
-                </Label>
-                <Select value={formData.wasteType} onValueChange={(value) => handleInputChange("wasteType", value)}>
-                  <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="Select waste type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="household">Household Organic Waste</SelectItem>
-                    <SelectItem value="agricultural">Agricultural Waste</SelectItem>
-                    <SelectItem value="commercial">Commercial Food Waste</SelectItem>
-                    <SelectItem value="mixed">Mixed Organic Waste</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <Label htmlFor="dailyWasteAmount" className="text-sm font-medium text-gray-700">
-                  Daily Waste Amount
-                </Label>
-                <Select
-                  value={formData.dailyWasteAmount}
-                  onValueChange={(value) => handleInputChange("dailyWasteAmount", value)}
-                >
-                  <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="Select daily amount" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="under-10kg">Under 10kg per day</SelectItem>
-                    <SelectItem value="10-25kg">10-25kg per day</SelectItem>
-                    <SelectItem value="25-50kg">25-50kg per day</SelectItem>
-                    <SelectItem value="50-100kg">50-100kg per day</SelectItem>
-                    <SelectItem value="over-100kg">Over 100kg per day</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div>
-                <Label htmlFor="budgetRange" className="text-sm font-medium text-gray-700">
-                  Budget Range
-                </Label>
-                <Select value={formData.budgetRange} onValueChange={(value) => handleInputChange("budgetRange", value)}>
-                  <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="Select budget range" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="under-5k">Under $5,000</SelectItem>
-                    <SelectItem value="5k-10k">$5,000 - $10,000</SelectItem>
-                    <SelectItem value="10k-20k">$10,000 - $20,000</SelectItem>
-                    <SelectItem value="20k-50k">$20,000 - $50,000</SelectItem>
-                    <SelectItem value="50k+">$50,000+</SelectItem>
-                    <SelectItem value="flexible">Flexible</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-
-            <div>
-              <Label htmlFor="timeline" className="text-sm font-medium text-gray-700">
-                Project Timeline
-              </Label>
-              <Select value={formData.timeline} onValueChange={(value) => handleInputChange("timeline", value)}>
-                <SelectTrigger className="mt-1">
-                  <SelectValue placeholder="Select timeline" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="asap">As soon as possible</SelectItem>
-                  <SelectItem value="1-3months">1-3 months</SelectItem>
-                  <SelectItem value="3-6months">3-6 months</SelectItem>
-                  <SelectItem value="6-12months">6-12 months</SelectItem>
-                  <SelectItem value="flexible">Flexible</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
+        
 
           {/* Additional Information */}
           <div>
@@ -354,7 +225,7 @@ export function BookingForm({ isOpen, onClose, selectedProduct }: BookingFormPro
               onChange={(e) => handleInputChange("additionalNotes", e.target.value)}
               className="mt-1"
               rows={4}
-              placeholder="Tell us about your specific needs, current waste management situation, or any questions you have..."
+              placeholder=""
             />
           </div>
 

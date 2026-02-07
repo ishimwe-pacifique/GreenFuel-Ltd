@@ -14,6 +14,13 @@ import {
   Users,
   HeartPulse,
   GraduationCap,
+  CloudRain,
+  Heart,
+  Lightbulb,
+  Briefcase,
+  UserCheck,
+  Trees,
+  Wheat,
 } from "lucide-react"
 import { useState } from "react"
 import { BookingForm } from "@/components/booking-form"
@@ -80,13 +87,13 @@ export default function ProductsPage() {
   ]
 
   const sdgs = [
-    { code: "SDG 13", title: "CLIMATE ACTION", desc: "Green Fuel abates equivalent thousands of CO2 emissions by reducing organic waste in open dumps, charcoal and firewood dependency by turning waste into energy." },
-    { code: "SDG 3", title: "GOOD HEALTH", desc: "Green Fuel removes the affordability barrier for clean energy, eliminating indoor air pollution, preventing chronic respiratory illnesses." },
-    { code: "SDG 7", title: "CLEAN ENERGY", desc: "Green Fuel creates a clean fuel access for low-income communities by lowering the upfront cost for cooking energy access and stove ownership through pay-as-you- cook model." },
-    { code: "SDG 8", title: "DECENT WORK", desc: "Green Fuel creates green jobs for women, youth and technicians through system installation, distribution and customer support." },
-    { code: "SDG 5", title: "GENDER EQUALITY", desc: "Green Fuel empowers women and girls by freeing up hours of time previously spent hunting and long cooking hours using wood based fuels." },
-    { code: "SDG 15/14", title: "LIFE ON LAND/WATER", desc: "Green Fuel solution system promotes 100% organic waste reuse, stopping deforestation and preventing waste contaminating local land and water." },
-    { code: "SDG 2", title: "ZERO HUNGER", desc: "Green Fuel’ energy production solution generates nutrient-rich organic fertilizer byproduct that regenerates the soil, increase crop yield promoting food accessibility." },
+    { code: "SDG 13", title: "CLIMATE ACTION", desc: "Green Fuel abates equivalent thousands of CO2 emissions by reducing organic waste in open dumps, charcoal and firewood dependency by turning waste into energy.", icon: CloudRain },
+    { code: "SDG 3", title: "GOOD HEALTH", desc: "Green Fuel removes the affordability barrier for clean energy, eliminating indoor air pollution, preventing chronic respiratory illnesses.", icon: Heart },
+    { code: "SDG 7", title: "CLEAN ENERGY", desc: "Green Fuel creates a clean fuel access for low-income communities by lowering the upfront cost for cooking energy access and stove ownership through pay-as-you- cook model.", icon: Lightbulb },
+    { code: "SDG 8", title: "DECENT WORK", desc: "Green Fuel creates green jobs for women, youth and technicians through system installation, distribution and customer support.", icon: Briefcase },
+    { code: "SDG 5", title: "GENDER EQUALITY", desc: "Green Fuel empowers women and girls by freeing up hours of time previously spent hunting and long cooking hours using wood based fuels.", icon: UserCheck },
+    { code: "SDG 15/14", title: "LIFE ON LAND/WATER", desc: "Green Fuel solution system promotes 100% organic waste reuse, stopping deforestation and preventing waste contaminating local land and water.", icon: Trees },
+    { code: "SDG 2", title: "ZERO HUNGER", desc: "Green Fuel' energy production solution generates nutrient-rich organic fertilizer byproduct that regenerates the soil, increase crop yield promoting food accessibility.", icon: Wheat },
   ]
 
   const handleGetQuote = (product: any) => {
@@ -203,6 +210,7 @@ export default function ProductsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {sdgs.map((sdg, i) => (
                 <div key={i} className="p-8 border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300">
+                  <sdg.icon className="h-8 w-8 text-green-600 mb-4" />
                   <span className="text-green-600 font-extrabold text-xs tracking-widest mb-4 block">{sdg.code}</span>
                   <h4 className="montserrat-bold text-sm text-[#002868] uppercase mb-4 leading-tight">{sdg.title}</h4>
                   <p className="text-xs text-gray-500 font-bold leading-relaxed">{sdg.desc}</p>

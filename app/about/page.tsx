@@ -180,12 +180,12 @@ export default function AboutPage() {
 
             <div className="prose prose-xl max-w-none montserrat font-medium text-gray-700 space-y-12 leading-relaxed">
               <p className="text-2xl lg:text-3xl montserrat-bold text-[#002868] border-l-8 border-green-600 pl-8">
-                "Our journey began in 2024 in the Rwamagana District. After moving to a rural community, our founder witnessed the daily struggle of the 'fuel hunt.'"
+                "Our Journey began in 2024 in Rwamagana District Eastern Province of Rwanda. After moving to a rural community, our founder witnessed the daily struggle of the 'fuel hunt.'"
               </p>
               
               <div className="space-y-8">
                 <p>
-                  While kitchens were filled with smoke, nearby markets and households backyards were filled with organic waste going to dumps. We realized the cooking energy crisis was not caused by a shortage of sources, but rather by outdated technology and an inability to efficiently capture and store energy.
+                  While kitchens were filled with smoke, nearby markets and households backyards were filled with organic waste going to dumps. We realized the cooking energy crisis was not caused by a shortage of resources, but rather by outdated technology and an inability to efficiently capture and store energy.
                 </p>
                 <p>
                   Today, as an industry pioneer, we replace "broken" traditional models with a guaranteed service that makes clean cooking energy a <strong>right for everyone</strong>, not a luxury.

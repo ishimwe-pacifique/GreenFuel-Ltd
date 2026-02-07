@@ -22,25 +22,22 @@ export async function POST(request: NextRequest) {
     // Email to business
     const businessEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #16a34a;">New ${formData.serviceType} Request</h2>
+        <h2 style="color: #16a34a;">New Quote Request</h2>
         
         <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h3 style="color: #15803d; margin-top: 0;">Contact Information</h3>
           <p><strong>Name:</strong> ${formData.name}</p>
           <p><strong>Email:</strong> ${formData.email}</p>
           <p><strong>Phone:</strong> ${formData.phone}</p>
-          ${formData.company ? `<p><strong>Company:</strong> ${formData.company}</p>` : ''}
+          ${formData.company ? `<p><strong>District/Sector:</strong> ${formData.company}</p>` : ''}
         </div>
 
+        ${formData.productName ? `
         <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #15803d; margin-top: 0;">Project Details</h3>
-          ${formData.productName ? `<p><strong>Product:</strong> ${formData.productName}</p>` : ''}
-          <p><strong>Location:</strong> ${formData.projectLocation}</p>
-          ${formData.wasteType ? `<p><strong>Waste Type:</strong> ${formData.wasteType}</p>` : ''}
-          ${formData.dailyWasteAmount ? `<p><strong>Daily Waste Amount:</strong> ${formData.dailyWasteAmount}</p>` : ''}
-          ${formData.budgetRange ? `<p><strong>Budget Range:</strong> ${formData.budgetRange}</p>` : ''}
-          ${formData.timeline ? `<p><strong>Timeline:</strong> ${formData.timeline}</p>` : ''}
+          <h3 style="color: #15803d; margin-top: 0;">Product Interest</h3>
+          <p><strong>Product:</strong> ${formData.productName}</p>
         </div>
+        ` : ''}
 
         ${formData.additionalNotes ? `
         <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -58,13 +55,11 @@ export async function POST(request: NextRequest) {
         
         <p>Dear ${formData.name},</p>
         
-        <p>We have received your ${formData.serviceType.toLowerCase()} request and our team will contact you within 24 hours.</p>
+        <p>We have received your quote request and our team will contact you within 24 hours.</p>
         
         <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h3 style="color: #15803d; margin-top: 0;">Your Request Summary</h3>
-          <p><strong>Service Type:</strong> ${formData.serviceType}</p>
           ${formData.productName ? `<p><strong>Product:</strong> ${formData.productName}</p>` : ''}
-          <p><strong>Location:</strong> ${formData.projectLocation}</p>
           <p><strong>Reference ID:</strong> BD-${Date.now().toString().slice(-6)}</p>
         </div>
         
@@ -76,7 +71,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
       to: process.env.BUSINESS_EMAIL,
-      subject: `New ${formData.serviceType} Request from ${formData.name}`,
+      subject: `New Quote Request from ${formData.name}${formData.productName ? ` - ${formData.productName}` : ''}`,
       html: businessEmailHtml,
     })
 
