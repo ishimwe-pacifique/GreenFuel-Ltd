@@ -19,7 +19,7 @@ export function AboutUsSection() {
           {/* Image Side - Maximum Clarity */}
           <div className="relative w-full lg:w-1/2 h-[400px] lg:h-auto overflow-hidden">
             <Image
-              src="/aboutimagehome.jpeg"
+              src="/gas ishiga.jpeg"
               alt="Green Fuel Onsite Installation"
               fill
               className="object-cover transition-transform duration-1000 hover:scale-105"
@@ -39,7 +39,7 @@ export function AboutUsSection() {
               <div className="space-y-6">
                 {/* Provided Paragraph 1 */}
                 <p className="montserrat-bold text-xl lg:text-2xl text-white leading-tight">
-                  Green Fuel empowers households and institutions with affordable and clean cooking gas from organic waste, helping them save 60% of their cooking fuel costs.
+                  Green Fuel empowers households and institutions with affordable clean cooking gas made from local organic wastes, displacing smoky wood fuel dependency while also helping them save 60% of their cooking fuel costs.
                 </p>
                 
                 {/* Minimalist Divider */}
@@ -48,17 +48,13 @@ export function AboutUsSection() {
                 {/* Provided Body Text */}
                 <div className="montserrat-medium text-gray-300 text-base lg:text-lg leading-relaxed space-y-6">
                   <p>
-                    We make cooking experience convenient and reliable by onsite installing digital monitored biodigesters or by providing stored biogas at our customers place.
-                  </p>
-                  
-                  <p>
-                    Our pay-as-you-cook model powered by smart meters, allow our customers to cook with flexible payment mode and on time action before gas runs out for our technicians.
+                    We make cooking experience healthy, convenient and reliable for our customers through onsite installed; digital monitored biodigesters or through cylinder stored bio-gas. 
                   </p>
 
                   {/* Closing Statement Highlighted in Green */}
                   <div className="pt-6 border-t border-white/10">
                     <p className="text-green-400 font-extrabold text-sm lg:text-base tracking-wide italic">
-                      Green Fuel is here to provide a cleaner, healthier, more sustainable cooking energy alternative for everyone.
+                      Green Fuel was born to provide cleaner, affordable, healthier, sustainable cooking energy for everyone
                     </p>
                   </div>
                 </div>

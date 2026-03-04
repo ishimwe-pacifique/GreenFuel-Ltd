@@ -17,17 +17,17 @@ export function Testimonials() {
       location: "Nyatare, Rwanda",
       image: "/placeholder.svg",
       rating: 5,
-      quote: "Green Fuel's biodigester has completely transformed our daily life. We save money on cooking gas and our kitchen is much cleaner without smoke. The installation team was professional and the system works perfectly.",
-      highlight: "SAVES 80% ON COOKING COSTS",
+      quote: "Green Fuel's biodigester has completely transformed my family daily cooking life. The gas is affordable, we save money on cooking fuel everyday and use it for other self development activities; our kitchen is much cleaner without smoke. The installation team was professional and the system works perfectly.",
+      highlight: "",
     },
     {
       name: "MERRY BAZIGA",
-      role: "Mother & Farmer",
+      role: "Mother",
       location: "Nyagatare District, Rwanda",
       image: "/placeholder.svg",
       rating: 5,
-      quote: "Before Green Fuel, I was trapped between the high cost of charcoal and the choking smoke of firewood. Now, I pay affordably per semester via mobile money, my kitchen is clean, and I save money every single day.",
-      highlight: "AFFORDABLE PAY-AS-YOU-COOK",
+      quote: "Before Green Fuel, I was trapped between the high cost of charcoal and the choking smoke of firewood. Now, that I use Green Fuel gas, my kitchen is clean, the air in the kitchen is clean and I save money every single day",
+   
     },
   ]
 
@@ -51,7 +51,7 @@ export function Testimonials() {
         {/* CAPITALIZED Header Section */}
         <div className="flex flex-col items-center text-center mb-20">
           <h3 className="montserrat-bold text-4xl md:text-5xl text-[#002868] tracking-tighter uppercase">
-            CUSTOMER STORIES
+            Testimonials
           </h3>
           <div className="h-1 w-20 bg-green-500 mt-6" />
         </div>
@@ -102,9 +102,6 @@ export function Testimonials() {
                   </div>
 
                   <div className="mt-10 pt-6 border-t border-gray-50">
-                    <span className="montserrat-bold text-[9px] tracking-[0.2em] bg-[#002868] px-4 py-2 text-white uppercase">
-                      {item.highlight}
-                    </span>
                   </div>
                 </CardContent>
               </Card>

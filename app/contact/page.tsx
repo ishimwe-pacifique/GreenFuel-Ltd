@@ -21,25 +21,25 @@ export default function ContactPage() {
 
   const faqs = [
     {
-      question: "HOW DOES THE DIGITAL PAYMENT SYSTEM WORK?",
-      answer: "We utilize a secure IoT-integrated platform. Customers top up cooking gas via Mobile Money. Our smart meters automatically track usage and update gas balance in real-time."
+      question: "How do I pay for the gas?",
+      answer: "Green Fuel gas is accessible through a flexible, affordable pay-as-you-cook model. Our customers pay by cash or mobile money."
     },
     {
-      question: "WHAT HAPPENS DURING A SYSTEM MALFUNCTION?",
-      answer: "Every Green Fuel installation is connected to our Central Monitoring Station. If a sensor detects a drop in pressure or a technical fault, our team is alerted instantly and dispatches a technician proactively."
+      question: "What happens if the system stops working?",
+      answer: "Our Biodigester systems are digitally monitored allowing us to see the risks alerts in real time, enabling our team to act on time. "
     },
     {
-      question: "ARE THERE SPECIFIC WASTE REQUIREMENTS?",
-      answer: "For green fuel iwawe product, we recommend a consistent supply of at least 15kg of organic waste for daily optimal gas production. This includes kitchen scraps, animal waste, and other biodegradable waste."
+      question: "Is it really cheaper than charcoal?",
+      answer: "Yes. our customers has reported 60% savings on their monthly cooking expenses."
     },
     {
-      question: "What are the requirements to get For Green Fuel solution?",
-      answer: "A Rwandan ID Card or At least five year valid Passport, a table or stand at your home for stove installation. For Green Fuel Iwawe generating at least 15kg of organic waste daily is a must."
-    },
-     {
-      question: "Is your biogas really cheaper than charcoal?",
-      answer: "Yes. On average, our customers save 60% on their monthly cooking expenses."
+      question: " What are the requirements to get For Green Fuel solution?",
+      answer: "A Rwandan ID Card or At least five year valid Passport, a table or stand at your place for stove installation. For Biodigester installation and monitoring we require you to be generating at least 20kg of organic waste daily."
     }
+    //  {
+    //   question: "Is your biogas really cheaper than charcoal?",
+    //   answer: "Yes. On average, our customers save 60% on their monthly cooking expenses."
+    // }
   ]
 
   return (
@@ -86,7 +86,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row shadow-2xl overflow-hidden border border-gray-100">
               <div className="lg:w-2/5 relative min-h-[400px] bg-gray-900">
-                <img src="/bg4.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" alt="Green Fuel Tech" />
+                <img src="/igare gas.jpeg" className="absolute inset-0 w-full h-full object-cover opacity-60" alt="Green Fuel Tech" />
                 <div className="absolute inset-0 flex flex-col justify-center p-12 text-white">
               
                 </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   </div>
                   <div className="md:col-span-2 pt-6">
                     <Button className="w-full bg-[#001a3d] hover:bg-green-700 text-white rounded-none py-8 font-extrabold tracking-[0.3em] uppercase transition-all shadow-xl">
-                      Submit Message <Send className="ml-3 h-4 w-4" />
+                      Submit your order <Send className="ml-3 h-4 w-4" />
                     </Button>
                   </div>
                 </form>

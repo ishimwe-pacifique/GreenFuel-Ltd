@@ -68,15 +68,38 @@ export default function NewsPage() {
       <Header />
 
       {/* IMPROVED TRANSPARENT BANNER */}
-      <section className="relative h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-hidden bg-[#001a3d]">
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] hover:scale-105"
-          style={{ backgroundImage: "url('/Greenfuel_news.png')" }}
-        />
-        <div className="absolute inset-0 bg-black/10" />
+     <section className="relative h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-hidden bg-[#001a3d]">
+  {/* First Image - News/Landscape focus */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ 
+      backgroundImage: "url('/Greenfuel_news.png')",
+      animation: "slide-cycle 12s infinite" 
+    }}
+  />
+  
+  {/* Second Image - twogas.jpeg - Focused and "Pushed Back" */}
+  <div 
+    className="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-0 scale-90"
+    style={{ 
+      backgroundImage: "url('/twogas.jpeg')", 
+      animation: "slide-cycle 12s infinite 6s" 
+    }}
+  />
 
-        
-      </section>
+  {/* Overlay to unify the two different image styles */}
+  <div className="absolute inset-0 bg-black/20" />
+
+  {/* CSS for the smooth cross-fade and slight zoom */}
+  <style>{`
+    @keyframes slide-cycle {
+      0%, 5% { opacity: 0; transform: scale(1.05); }
+      10%, 45% { opacity: 1; transform: scale(1); }
+      50%, 55% { opacity: 0; transform: scale(1.05); }
+      100% { opacity: 0; }
+    }
+  `}</style>
+</section>
 
       <main className="montserrat pt-24 pb-24 px-6 lg:px-12">
         {/* Featured Article Section */}

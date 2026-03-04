@@ -7,8 +7,10 @@ export function HeroSection() {
 
   const backgroundImages = [
     "/newsimages.jpeg",
+    "/ishyiga gas.jpeg",
     "/WhatsApp Image 2025-09-05 at 20.02.47_3ec366e9.jpg",
     "/bg5.jpg",
+
   ]
 
   useEffect(() => {
@@ -64,8 +66,8 @@ export function HeroSection() {
     <div className="space-y-4">
       {/* Scaled Down Headline */}
       <h1 className="montserrat-hero text-[#001a3d] text-xl md:text-3xl font-[800] leading-tight tracking-tight uppercase">
-        Transforming lives through clean, <br /> 
-        affordable cooking energy access
+        Transforming lives through  <br /> 
+       affordable, clean cooking gas
       </h1>
       
       {/* Slim Green Divider */}

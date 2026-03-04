@@ -34,66 +34,64 @@ export default function ProductsPage() {
     {
       id: 1,
       name: "GREEN FUEL SHARE ME",
-      description: "A smart-metered stored biogas kit comprised of a burner and lightweight refillable container.",
+      description: "We provide cylinder stored biogas for people with inadequate daily waste generation or space to run a biodigester. It is provided within a lightweight refillable Cylinder connected with a burner.",
       features: [
-        "Lightweight refillable biogas container",
-        "Low initial stove deposit",
-        "refillable through Pay-as-you-cook model using mobile money from as low as 500 Rwf.",
-        "Saves 60% on cooking fuel costs"
+        "Convenient",
+        "Affordable on initial stove and container deposit,",
+        "Refillable in increment.",
+        "Affordable, users proven to save up to 60% on cooking fuel cost.",
+        "Environmental friendly cooking gas"
        
       ],
       icon: Zap,
-      image: "/aboutimagehome.jpeg",
-      model: "Pay-as-you-cook via Mobile Money"
+      image: "/womencooking.jpeg",
     },
     {
       id: 2,
       name: "GREEN FUEL IWAWE",
-      description: "On-site digital monitored bio-digesters for farmers or institutions for their waste to gas conversion.",
+      description: "We provide on sites biodigesters installation and monitoring services for farmers and institutions, enabling them to converts their farm or institutional waste into clean, efficient cooking gas. ",
       features: [
-        "Real-time digital monitoring technology",
-        "Proactive alerts that prevent system failure",
-        "Low initial stove deposit",
-        "Flexible semester or monthly payments",
-        "Saves 60% on cooking fuel costs",
-        "Direct waste-to-energy conversion"
+        "Clean cooking Energy at the comfort of your place",
+        "Reliable energy access at all time of need",
+        "Flexible usage payments",
+        "Affordable initial commitment fees",
+        "Proven by the user, to Save up to 60% on cooking fuel cost",
+        
       ],
       icon: Droplets,
       image: "/GREENFUEL IWAWE.PRODUCT.jpeg",
-      model: "Institutional & Home On-site Systems"
+     
     },
     {
       id: 3,
       name: "GREEN FUEL CROP BOOST",
-      description: "High-quality bio-slurry organic fertilizer, a powerful byproduct of our gas production.",
+      description: "We empower famers with a highly nutritious organic fertilizer yielded from the gas Production processes. ",
       features: [
-        "Replaces expensive chemical fertilizers",
-        "Regenerates soil health naturally",
-        "Increases crop yields by 40%",
-        "100% organic and nutrient-rich",
-        "Enhances circular economy"
+        "Reduce expensive chemical fertilizers usage ",
+        "Regenerates the soil, ",
+        "Proven by the user to increase crop productivity up to 40%."
+       
       ],
       icon: Sprout,
       image: "/aboutbanner.jpeg",
-      model: "High-Performance Organic Fertilizer"
     },
   ]
 
   const impacts = [
-    { icon: Globe, title: "Environment", desc: "we abate thousands tons of CO2 by diverting the organic waste open dumping and by eliminating the dependence of firewood and charcoal for cooking" },
-    { icon: Users, title: "Economy", desc: "we are an engine of green jobs for local women, youth and technicians." },
-    { icon: HeartPulse, title: "Health", desc: "we significantly reduce respiratory illnesses by eliminating kitchen smokes and soot." },
-    { icon: GraduationCap, title: "Education", desc: "Institution like Schools save on fuel costs, allowing more budgets for student resources." },
+    { icon: Globe, title: "Health and Environment", desc: "We displace household smoke with clean bio – gas, reducing respiratory diseases while curbing deforestation." },
+    { icon:  Briefcase, title: "Economic Relief", desc: "We help Families save 60% on cooking energy costs, and redirecting vital funds to education and nutrition." },
+    { icon:  Wheat, title: "Agricultural Prosperity", desc: "Our bio-fertilizer byproduct has proven by the user to increase farm yields by 40%, strengthening food security." },
+    { icon: Users, title: "Women’s Empowerment", desc: "By removing the burden of wood collection, we reclaim hours of productivity for women, fostering gender equity and rural development." },
   ]
 
   const sdgs = [
-    { code: "SDG 13", title: "CLIMATE ACTION", desc: "Green Fuel abates equivalent thousands of CO2 emissions by reducing organic waste in open dumps, charcoal and firewood dependency by turning waste into energy.", icon: CloudRain },
-    { code: "SDG 3", title: "GOOD HEALTH", desc: "Green Fuel removes the affordability barrier for clean energy, eliminating indoor air pollution, preventing chronic respiratory illnesses.", icon: Heart },
-    { code: "SDG 7", title: "CLEAN ENERGY", desc: "Green Fuel creates a clean fuel access for low-income communities by lowering the upfront cost for cooking energy access and stove ownership through pay-as-you- cook model.", icon: Lightbulb },
-    { code: "SDG 8", title: "DECENT WORK", desc: "Green Fuel creates green jobs for women, youth and technicians through system installation, distribution and customer support.", icon: Briefcase },
-    { code: "SDG 5", title: "GENDER EQUALITY", desc: "Green Fuel empowers women and girls by freeing up hours of time previously spent hunting and long cooking hours using wood based fuels.", icon: UserCheck },
-    { code: "SDG 15/14", title: "LIFE ON LAND/WATER", desc: "Green Fuel solution system promotes 100% organic waste reuse, stopping deforestation and preventing waste contaminating local land and water.", icon: Trees },
-    { code: "SDG 2", title: "ZERO HUNGER", desc: "Green Fuel' energy production solution generates nutrient-rich organic fertilizer byproduct that regenerates the soil, increase crop yield promoting food accessibility.", icon: Wheat },
+    { code: "SDG 13", title: "CLIMATE ACTION", desc: "We capture methane from organic waste and turn it into a clean cooking gas, and reduces CO2 emissions by displacing charcoal and firewood.", icon: CloudRain },
+    { code: "SDG 3", title: "GOOD HEALTH", desc: "We prevent premature respiratory deaths by eliminating toxic indoor smoke.", icon: Heart },
+    { code: "SDG 7", title: "AFFORDABLE AND CLEAN ENERGY", desc: "We Provide 100% renewable biogas accessible through a flexible, affordable pay-as-you-cook model.", icon: Lightbulb },
+    { code: "SDG 8", title: "DECENT WORK", desc: " We create jobs for women, youth and technicians through system installation, distribution and customer support.", icon: Briefcase },
+    { code: "SDG 5", title: "GENDER EQUALITY", desc: "We help women to reclaim time previously spent on fuel collection, fostering economic empowerment.", icon: UserCheck },
+    { code: "SDG 15/14", title: "LIFE ON LAND AND LIFE BELOW WATER", desc: "Our solution promotes 100% organic waste reuse, preventing organic waste contamination of local land and stopping deforestation by displacing wood based fuels with waste based gas.", icon: Trees },
+    { code: "SDG 2", title: "ZERO HUNGER", desc: "We enable farmers boosts their farm yields by 40% through our nutrient - rich bio - fertilizer byproduct.", icon: Wheat },
   ]
 
   const handleGetQuote = (product: any) => {
@@ -112,26 +110,46 @@ export default function ProductsPage() {
       <Header />
       
       {/* IMPROVED TRANSPARENT BANNER */}
-      <section className="relative h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-hidden bg-[#001a3d]">
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] hover:scale-105"
-          style={{ backgroundImage: "url('/newsimage.jpeg')" }}
-        />
-        <div className="absolute inset-0 bg-black/10" />
+    <section className="relative h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-hidden bg-[#f3f4f6]">
+  {/* First Image - gas ishiga.jpeg */}
+  <div 
+    className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+    style={{ 
+      backgroundImage: "url('/gas ishiga.jpeg')",
+      animation: "fade-1 12s infinite" 
+    }}
+  />
+  
+  {/* Second Image - twogas.jpeg */}
+  <div 
+    className="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-0"
+    style={{ 
+      backgroundImage: "url('/twogas.jpeg')", 
+      animation: "fade-2 12s infinite" 
+    }}
+  />
 
-        <div className="relative z-10 w-full px-4 lg:px-0">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto bg-white/40 backdrop-blur-md border border-white/20 py-12 md:py-16 px-8 text-center shadow-2xl"
-          >
-            <p className="montserrat font-bold text-[#001a3d]/80 text-sm md:text-lg tracking-[0.3em] uppercase">
-              Affordable, Clean & Reliable Cooking Energy access
-            </p>
-          </motion.div>
-        </div>
-      </section>
+  {/* Subtle light overlay to soften the look */}
+  <div className="absolute inset-0 bg-white/10 pointer-events-none" />
+
+  {/* Content Container */}
+  <div className="relative z-10 w-full px-4 lg:px-0 text-center">
+     {/* Your content goes here */}
+  </div>
+
+  <style>{`
+    @keyframes fade-1 {
+      0%, 45% { opacity: 1; transform: scale(0.9); }
+      50%, 95% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(0.9); }
+    }
+    @keyframes fade-2 {
+      0%, 45% { opacity: 0; transform: scale(0.8); }
+      50%, 95% { opacity: 1; transform: scale(0.9); }
+      100% { opacity: 0; transform: scale(0.8); }
+    }
+  `}</style>
+</section>
 
       <main className="montserrat pb-24">
         {/* PRODUCTS SECTION */}
@@ -148,10 +166,6 @@ export default function ProductsPage() {
                   <CardTitle className="montserrat-bold text-xl text-[#002868] tracking-tight leading-tight uppercase mb-2">
                     {product.name}
                   </CardTitle>
-                  <div className="flex items-center space-x-3">
-                    <product.icon className="h-5 w-5 text-green-600" />
-                    <span className="text-[10px] font-extrabold text-green-700 tracking-[0.2em] uppercase">{product.model}</span>
-                  </div>
                 </CardHeader>
                 <CardContent className="p-8 pt-6 flex-1 flex flex-col">
                   <p className="text-sm font-medium text-gray-600 mb-8">{product.description}</p>
@@ -167,7 +181,7 @@ export default function ProductsPage() {
                     onClick={() => handleGetQuote(product)}
                     className="w-full rounded-none bg-[#002868] py-8 font-extrabold tracking-widest uppercase hover:bg-green-700 transition-colors shadow-lg"
                   >
-                    Get Quote <ArrowRight className="ml-2 h-4 w-4" />
+                    Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>
               </Card>
@@ -182,7 +196,7 @@ export default function ProductsPage() {
               <div>
                 <h3 className="montserrat-bold text-4xl lg:text-5xl uppercase tracking-tighter leading-tight mb-8">Driven by Impact</h3>
                 <p className="text-gray-400 font-medium text-lg leading-relaxed mb-10">
-                  At Green Fuel, our success is measured by the lives transformed and the emissions abated across our communities.
+                  At Green Fuel, our success is measured by the lives transformed  across our communities.
                 </p>
                 <div className="h-1 w-24 bg-green-500" />
               </div>
@@ -203,8 +217,7 @@ export default function ProductsPage() {
         <section className="py-24 bg-white px-6 lg:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-xs font-extrabold tracking-[0.4em] text-green-700 uppercase mb-4">Our Commitment</h2>
-              <h3 className="montserrat-bold text-4xl lg:text-5xl text-[#002868] uppercase tracking-tighter">Sustainability</h3>
+              <h3 className="montserrat-bold text-4xl lg:text-5xl text-[#002868] uppercase tracking-tighter">OUR CONTRIBUTIONS TO SUSTAINABLE DEVELOPMENT GOALS(SDG)</h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

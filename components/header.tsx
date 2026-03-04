@@ -65,7 +65,7 @@ export function Header() {
           <div className="hidden lg:block">
             <Link href="/products">
               <Button className="nav-text bg-green-700 text-white hover:bg-green-800 font-extrabold px-10 py-3 rounded-none transition-all duration-300 shadow-md">
-                GET QUOTE
+                GET A QUOTE
               </Button>
             </Link>
           </div>

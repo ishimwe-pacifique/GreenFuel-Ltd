@@ -33,7 +33,7 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-300 leading-relaxed font-medium text-sm">
-              Transforming lives through clean, affordable cooking energy access made from local organic wastes.
+             Transforming lives through affordable, clean cooking gas made from local organic wastes.
             </p>
             <div className="flex space-x-3">
               {[

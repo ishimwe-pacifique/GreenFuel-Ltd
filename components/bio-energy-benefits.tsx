@@ -13,25 +13,25 @@ export function BioEnergyBenefits() {
     {
       icon: DollarSign,
       title: "AFFORDABILITY",
-      description: "Save up to 60% on cooking costs compared to traditional charcoal and wood.",
+      description: "Green Fuel gas has proven to save up to 60% of the usual cooking expenses compared to other cooking energy alternatives (LPG, Charcoal, and Firewood).",
       bgImage: "/smilemum.jpeg",
     },
     {
       icon: Activity,
-      title: "RELIABILITY",
-      description: "Real-time digital monitoring provides instant alerts, ensuring your clean gas supply never runs out.",
+      title: "Cooking with Green Fuel Gas, promote increased crop productivity",
+      description: "Green Fuel’s gas production process generates a nutrient - rich organic bio-fertilizer that has proven to increase farm productivity by 40%.",
       bgImage: "/smilemum.jpeg",
     },
     {
       icon: CreditCard,
       title: "ACCESSIBILITY",
-      description: "We've removed the high upfront cost barrier with our flexible, digital pay-as-you-cook model.",
+      description: "Green Fuel gas is accessible nearby your household in cylinders or at your place through biodigesters.",
       bgImage: "/smilemum.jpeg",
     },
     {
       icon: HeartPulse,
-      title: "HEALTH & SAFETY",
-      description: "Eliminate toxic smoke and soot for a safer, lung-friendly kitchen environment.",
+      title: "HEALTH",
+      description: "Green Fuel gas displaces toxic smokes inhalation and soot with a safer, cleaner cooking environment.",
       bgImage: "/smilemum.jpeg",
     },
   ]
@@ -49,7 +49,7 @@ export function BioEnergyBenefits() {
         <div className="mb-20">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
            <h3 className="montserrat-bold text-lg lg:text-2xl text-[#002868] leading-none uppercase tracking-tighter">
-  Why Choosing <br /> Green Fuel products?
+  Why choosing  <br /> Green Fuel Gas?
 </h3>
             <div className="h-1.5 w-32 bg-green-500 mb-2" />
           </div>
@@ -116,7 +116,7 @@ export function BioEnergyBenefits() {
               whileTap={{ scale: 0.98 }}
               className="montserrat-bold w-full bg-[#002868] text-white py-8 tracking-[0.3em] uppercase text-xs transition-all shadow-2xl border-b-8 border-[#001a3d]"
             >
-              Learn More About Our Clean Energy Solutions
+              Learn More About Our Clean cooking energy solutions
             </motion.button>
           </Link>
         </div>
