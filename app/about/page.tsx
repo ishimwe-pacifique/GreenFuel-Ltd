@@ -71,10 +71,7 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-6 text-gray-600 font-medium leading-relaxed text-lg">
                   <p>
-                   Green Fuel provides an affordable, clean cooking solution by converting organic waste into gas.   <span className="text-green-700 font-bold italic">Through on-site biodigesters and cylinder stored biogas</span> made from local organic waste <strong>"we deliver affordable, reliable, smoke-free energy to households and schools while reducing waste and emissions."</strong> Our model ensures fair accessibility, creates additional value through byproduct Bio fertilizer, 
-                  </p>
-                  <p>
-                    supporting both environmental sustainability and improved livelihoods.
+                   Green Fuel provides affordable, clean cooking solution by converting organic waste into gas.   <span className="text-green-700 font-bold italic">Through on-site biodigesters and cylinder stored biogas </span><strong>"we deliver affordable, reliable, smoke-free energy to households and schools while reducing waste and emissions."</strong> Our model ensures fair accessibility, creates additional value through byproduct Bio fertilizer, supporting both environmental sustainability and improved livelihoods. 
                   </p>
                 </div>
               </div>
