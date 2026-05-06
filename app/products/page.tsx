@@ -34,13 +34,13 @@ export default function ProductsPage() {
     {
       id: 1,
       name: "GREEN FUEL SHARE ME",
-      description: "We provide cylinder stored biogas for people with inadequate daily waste generation or space to run a biodigester. It is provided within a lightweight refillable Cylinder connected with a burner.",
+      description: "We provide cylinder stored Biogas for non - livestock owning households.",
       features: [
         "Convenient",
-        "Affordable on initial stove and container deposit,",
-        "Refillable in increment.",
-        "Affordable, users proven to save up to 60% on cooking fuel cost.",
-        "Environmental friendly cooking gas"
+        "AFFORDABLE STARTER KIT (STOVE AND CYLINDER) ",
+        "REFILLABLE ",
+        "AFFORDABLE WITH STABLE PRICES COMPARED TO OTHER CYLINDERS GAS",
+        // "Environmental friendly cooking gas"
        
       ],
       icon: Zap,
@@ -49,13 +49,13 @@ export default function ProductsPage() {
     {
       id: 2,
       name: "GREEN FUEL IWAWE",
-      description: "We provide on sites biodigesters installation and monitoring services for farmers and institutions, enabling them to converts their farm or institutional waste into clean, efficient cooking gas. ",
+      description: "We install on-site Bio-digesters for livestock owning households and schools allowing them to turn their animal waste (cow, pig, chicken) and student feces into a clean cooking gas enabling them to have daily access to renewable, clean cooking gas at their premises.",
       features: [
-        "Clean cooking Energy at the comfort of your place",
-        "Reliable energy access at all time of need",
-        "Flexible usage payments",
-        "Affordable initial commitment fees",
-        "Proven by the user, to Save up to 60% on cooking fuel cost",
+        "CLEAN COOKING GAS AT THE COMFORT OF YOUR PREMISE",
+        "RELIABLE GAS ACCESS AT ALL TIME OF NEED",
+        "NO UPFRONT PAYMENTS",
+        "RELIABLE SYSTEM",
+        "PROVEN TO SAVE UP TO 60% ON THE USUAL COOKING FUEL EXPENSES",
         
       ],
       icon: Droplets,
@@ -65,15 +65,15 @@ export default function ProductsPage() {
     {
       id: 3,
       name: "GREEN FUEL CROP BOOST",
-      description: "We empower famers with a highly nutritious organic fertilizer yielded from the gas Production processes. ",
+      description: "We empower famers with a plant ready, soil regenerating organic fertilizer yielded from the gas Production processes.  ",
       features: [
-        "Reduce expensive chemical fertilizers usage ",
-        "Regenerates the soil, ",
-        "Proven by the user to increase crop productivity up to 40%."
+        "REDUCE EXPENSIVE CHEMICAL FERTILIZERS RELIANCE REGENERATES THE SOIL,  ",
+        "PROVEN TO INCREASE CROP PRODUCTIVITY UP TO 40%  ",
+        // "Proven by the user to increase crop productivity up to 40%."
        
       ],
       icon: Sprout,
-      image: "/aboutbanner.jpeg",
+      image: "/boost1.jpeg",
     },
   ]
 
@@ -115,7 +115,7 @@ export default function ProductsPage() {
   <div 
     className="absolute inset-0 bg-contain bg-no-repeat bg-center"
     style={{ 
-      backgroundImage: "url('/gas ishiga.jpeg')",
+      backgroundImage: "url('/productbuner1.jpeg')",
       animation: "fade-1 12s infinite" 
     }}
   />
@@ -181,7 +181,7 @@ export default function ProductsPage() {
                     onClick={() => handleGetQuote(product)}
                     className="w-full rounded-none bg-[#002868] py-8 font-extrabold tracking-widest uppercase hover:bg-green-700 transition-colors shadow-lg"
                   >
-                    Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
+                    MAKE AN ORDER <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>
               </Card>

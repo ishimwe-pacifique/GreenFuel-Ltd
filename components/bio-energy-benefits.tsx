@@ -107,19 +107,6 @@ export function BioEnergyBenefits() {
             </motion.div>
           ))}
         </div>
-
-        {/* Call to Action - Professional Full-Width Style */}
-        <div className="mt-20 flex justify-center">
-          <Link href="/products" className="w-full max-w-2xl">
-            <motion.button
-              whileHover={{ backgroundColor: "#15803d", scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="montserrat-bold w-full bg-[#002868] text-white py-8 tracking-[0.3em] uppercase text-xs transition-all shadow-2xl border-b-8 border-[#001a3d]"
-            >
-              Learn More About Our Clean cooking energy solutions
-            </motion.button>
-          </Link>
-        </div>
       </div>
     </section>
   )

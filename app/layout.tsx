@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Green Fuel Ltd - Clean Energy Solutions in Rwanda",
+  title: "Green Fuel Ltd - Bio Cooking Energy Solutions Provider",
   description:
     "Transform waste into clean energy with Green Fuel Ltd. We specialize in bio-digesters that convert biodegradable waste into efficient bio-energy for households and institutions across Africa.",
   generator: "v0.app",

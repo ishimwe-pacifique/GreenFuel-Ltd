@@ -5,58 +5,53 @@ import Image from "next/image"
 
 export function AboutUsSection() {
   return (
-    <section className="relative w-full bg-white py-16 lg:py-24">
+    <section className="relative w-full bg-white py-12 lg:py-16 overflow-hidden">
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
         .montserrat-bold { font-family: 'Montserrat', sans-serif; font-weight: 800; }
         .montserrat-medium { font-family: 'Montserrat', sans-serif; font-weight: 600; }
       `}</style>
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
-        {/* Main Unit - Sharp Edges for a Corporate, Professional Look */}
-        <div className="flex flex-col lg:flex-row items-stretch shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-100">
+      <div className="w-full max-w-[1400px] mx-auto px-6">
+        {/* Flat Corporate Unit - Reduced Height and No Shadows */}
+        <div className="flex flex-col lg:flex-row items-stretch bg-[#001a3d] border border-gray-100">
           
-          {/* Image Side - Maximum Clarity */}
-          <div className="relative w-full lg:w-1/2 h-[400px] lg:h-auto overflow-hidden">
+          {/* Image Side - Focused and Flat */}
+          <div className="relative w-full lg:w-1/2 min-h-[300px] lg:h-[500px]">
             <Image
-              src="/gas ishiga.jpeg"
+              src="/aboutbanner.png"
               alt="Green Fuel Onsite Installation"
               fill
-              className="object-cover transition-transform duration-1000 hover:scale-105"
+              className="object-cover"
               priority
             />
           </div>
 
-          {/* Content Side - Precise Text Usage Only */}
-          <div className="w-full lg:w-1/2 bg-[#001a3d] p-10 lg:p-20 flex flex-col justify-center">
+          {/* Content Side - Flat Text Layout with No Extra Spacing */}
+          <div className="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="space-y-8"
+              transition={{ duration: 0.5 }}
+              className="space-y-6"
             >
-              <div className="space-y-6">
-                {/* Provided Paragraph 1 */}
-                <p className="montserrat-bold text-xl lg:text-2xl text-white leading-tight">
-                  Green Fuel empowers households and institutions with affordable clean cooking gas made from local organic wastes, displacing smoky wood fuel dependency while also helping them save 60% of their cooking fuel costs.
-                </p>
+              <div className="space-y-4">
+             
+
+                {/* Primary Paragraph - Exact Content */}
+                <h2 className="montserrat-bold text-lg lg:text-xl text-white leading-snug">
+                  Green Fuel empowers households and schools in rural and peri urban areas of Rwanda with affordable, clean cooking gas made from local organic wastes, improving health through clean cookings, save 60% of cooking fuel expenses, reduces emissions by diverting organic wastes from open dumping and forest cutting for cooking while also creating jobs for women and youths.
+                </h2>
                 
-                {/* Minimalist Divider */}
-                <div className="h-1 w-20 bg-green-500" />
+                {/* Flat Green Divider */}
+                <div className="h-1 w-12 bg-green-500" />
 
-                {/* Provided Body Text */}
-                <div className="montserrat-medium text-gray-300 text-base lg:text-lg leading-relaxed space-y-6">
+                {/* Body Text - Exact Content */}
+                <div className="montserrat-medium text-gray-300 text-sm lg:text-base leading-relaxed">
                   <p>
-                    We make cooking experience healthy, convenient and reliable for our customers through onsite installed; digital monitored biodigesters or through cylinder stored bio-gas. 
+                    We make cooking experience affordable, healthy, convenient and reliable for our customers through onsite installed Biodigester or through cylinder stored Bio-gas.
                   </p>
-
-                  {/* Closing Statement Highlighted in Green */}
-                  <div className="pt-6 border-t border-white/10">
-                    <p className="text-green-400 font-extrabold text-sm lg:text-base tracking-wide italic">
-                      Green Fuel was born to provide cleaner, affordable, healthier, sustainable cooking energy for everyone
-                    </p>
-                  </div>
                 </div>
               </div>
             </motion.div>

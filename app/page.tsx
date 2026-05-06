@@ -3,6 +3,8 @@ import { HeroSection } from "@/components/hero-section"
 // import { ProductsPreview } from "@/components/products-preview"
 import { BioEnergyBenefits } from "@/components/bio-energy-benefits"
 import { AboutUsSection } from "@/components/aboutusonhomepage"
+import { ImpactSection } from "@/components/impact-section"
+import { PartnersSection } from "@/components/partners-section"
 import { Footer } from "@/components/footer"
 import { Testimonials } from "@/components/testimonials"
 
@@ -14,6 +16,8 @@ export default function HomePage() {
         <HeroSection />
         <AboutUsSection/>
         <BioEnergyBenefits />
+        <ImpactSection />
+        <PartnersSection />
         <Testimonials />
       </main>
       <Footer />

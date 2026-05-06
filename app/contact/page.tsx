@@ -13,7 +13,7 @@ export default function ContactPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0)
 
   const contactTiles = [
-    { icon: MapPin, label: "HEADQUARTERS", value: "Nyagatare, Kigali, Rwanda" },
+    { icon: MapPin, label: "HEADQUARTERS", value: "Nyagatare and Rwamagana -Rwanda" },
     { icon: Phone, label: "DIRECT LINE", value: "+250 789 374 747" },
     { icon: Mail, label: "SUPPORT EMAIL", value: "info1.greenfuel@gmail.com" },
     { icon: Clock, label: "WORKING HOURS", value: "Mon - Sat: 8AM - 6PM" },
