@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import { TreePine, Users, Briefcase, Recycle, Sprout, Wind, Flame, Zap } from "lucide-react";
+import { TreePine, Users, Briefcase, Recycle, Leaf, Wind, Flame, Zap, Factory } from "lucide-react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 
-// High-performance counter logic
+// High-performance counter logic - updated to safely render units
 const Counter = ({ value }: { value: string }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   
-  // Extract numbers only for the animation logic
-  const numericValue = parseInt(value.replace(/[^0-9]/g, ""), 10);
+  // Extract leading number only, stopping at first non-numeric character
+  const numericValue = parseInt(value.replace(/,/g, ""), 10);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { damping: 50, stiffness: 100 });
   const [displayValue, setDisplayValue] = useState("0");
@@ -25,11 +25,19 @@ const Counter = ({ value }: { value: string }) => {
     });
   }, [springValue]);
 
+  // Safely grab units from strings like "720m3" or "20,736kg"
+  const getUnit = () => {
+    if (value.includes("m3")) return <span className="text-2xl lg:text-3xl ml-1 font-bold">m³</span>;
+    if (value.includes("kg")) return <span className="text-2xl lg:text-3xl ml-1 font-bold">kg</span>;
+    if (value.includes("+")) return "+";
+    if (value.includes("%")) return "%";
+    return "";
+  };
+
   return (
     <span ref={ref}>
       {displayValue}
-      {value.includes("+") ? "+" : ""}
-      {value.includes("%") ? "%" : ""}
+      {getUnit()}
     </span>
   );
 };
@@ -37,14 +45,12 @@ const Counter = ({ value }: { value: string }) => {
 export const ImpactSection = () => {
   const stats = [
     { label: "Biodigesters Installed", value: "6", icon: Zap },
-    { label: "of biogas has been produced and used", value: "720 m3", icon: Recycle },
-    // Updated value to 32+ as requested
+    { label: "of biogas has been produced and used", value: "5760m3", icon: Flame },
     { label: "people benefitting from our reliable biogas", value: "50+", icon: Users },
-    { label: "Trees have been saved", value: "720", icon: TreePine  },
-    { label: "tones of C02 emissions have been avoided by replacing firewood use with Biogas", value: "18", icon: Flame },
-    { label: "of methane emission avoided", value: "20, 736 kg", icon: Wind },
+    { label: "Trees have been saved", value: "720", icon: TreePine },
+    { label: "tones of C02 emissions have been avoided by replacing firewood use with Biogas", value: "18", icon: Factory },
+    { label: "of methane emission avoided", value: "20736kg", icon: Wind },
     { label: "Jobs created", value: "12", icon: Briefcase },
-    // { label: "tones of C02 emissions have been avoided by replacing firewood use with Green Fuel Biogas", value: "18", icon: Flame },
   ];
 
   return (
