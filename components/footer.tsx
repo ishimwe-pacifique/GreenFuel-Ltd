@@ -81,7 +81,7 @@ export function Footer() {
             <div className="space-y-5">
               <div className="flex items-start space-x-4">
                 <MapPin className="h-5 w-5 text-green-500 shrink-0" />
-                <span className="text-gray-300 text-sm font-bold tracking-tight">Nyagatare, Kigali, Rwanda</span>
+                <span className="text-gray-300 text-sm font-bold tracking-tight">Nyagatare, Rwamagana, Rwanda</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="h-5 w-5 text-green-500 shrink-0" />

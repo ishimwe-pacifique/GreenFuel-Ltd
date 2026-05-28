@@ -36,15 +36,15 @@ const Counter = ({ value }: { value: string }) => {
 
 export const ImpactSection = () => {
   const stats = [
-    { label: "Biodigester Systems Installed", value: "6", icon: Zap },
-    { label: "Trees have been saved from being cut down for firewood or charcoal use", value: "720", icon: TreePine },
+    { label: "Biodigesters Installed", value: "6", icon: Zap },
+    { label: "of biogas has been produced and used", value: "720 m3", icon: Recycle },
     // Updated value to 32+ as requested
-    { label: "people have access to affordable, clean cooking gas", value: "32+", icon: Users },
-    { label: "Jobs has been created", value: "12", icon: Briefcase },
-    { label: "kg of organic waste diverted from open dumping", value: "36,000", icon: Recycle },
-    { label: "farmers increased their crop productivity up to 40% through the byproduct fertilizer", value: "10", icon: Sprout },
-    { label: "kg of methane emission avoided", value: "20,736", icon: Wind },
-    { label: "tones of C02 emissions have been avoided by replacing firewood use with Green Fuel Biogas", value: "18", icon: Flame },
+    { label: "people benefitting from our reliable biogas", value: "50+", icon: Users },
+    { label: "Trees have been saved", value: "720", icon: TreePine  },
+    { label: "tones of C02 emissions have been avoided by replacing firewood use with Biogas", value: "18", icon: Flame },
+    { label: "of methane emission avoided", value: "20, 736 kg", icon: Wind },
+    { label: "Jobs created", value: "12", icon: Briefcase },
+    // { label: "tones of C02 emissions have been avoided by replacing firewood use with Green Fuel Biogas", value: "18", icon: Flame },
   ];
 
   return (

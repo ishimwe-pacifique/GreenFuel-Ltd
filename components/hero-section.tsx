@@ -8,7 +8,7 @@ export function HeroSection() {
   const backgroundImages = [
     "/newsimages.jpeg",
     "/ishyiga gas.jpeg",
-    "/WhatsApp Image 2025-09-05 at 20.02.47_3ec366e9.jpg",
+   
     // "/bg5.jpg",
 
   ]

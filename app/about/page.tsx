@@ -56,10 +56,13 @@ export default function AboutPage() {
                   <h2 className="montserrat-bold text-2xl tracking-[0.3em] uppercase">The Problem</h2>
                 </div>
                 <div className="space-y-6 text-gray-300 font-medium leading-relaxed text-lg">
-                  <p>
-                   More than 900 Millions People in Africa particularly from low and middle - income households, and schools lack access to clean cooking energy, according to WHO, this causes more than 800,000 Silent premature deaths annually.  <span className="text-white font-bold">With a continuous growing of Population,</span> cooking energy demand also increases pushing cooking energy prices to rise,
-                 meanwhile wastes resulting in the population growth increases also, 57% of them are organic wastes that are outpacing the capacity of waste dumping sites, emitting methane a Greenhouse Gas that is 80 times more powerful than C02 .
-                  </p>
+                 <p>
+  • More than 900 Millions People from low and middle-income households and schools in Africa, lack access to affordable, reliable clean cooking energy.
+  <br />• Cooking fuel prices continue to rise because of global market instability.
+  <br />• More than 800,000 premature deaths occurs annually due to toxic smokes inhalation from wood fuels dependency.
+  <br />• Relying on wood fuel contributes to deforestation and C02 Emissions.
+  <br />• Uncontrolled dumping of organic waste contributes to global warming through methane emissions.
+</p>
                 </div>
               </div>
 
