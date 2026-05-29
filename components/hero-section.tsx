@@ -67,7 +67,7 @@ export function HeroSection() {
       {/* Scaled Down Headline */}
       <h1 className="montserrat-hero text-[#001a3d] text-xl md:text-3xl font-[800] leading-tight tracking-tight uppercase">
         Transforming lives through  <br /> 
-       affordable, clean cooking gas
+       affordable, reliable cooking gas
       </h1>
       
       {/* Slim Green Divider */}
