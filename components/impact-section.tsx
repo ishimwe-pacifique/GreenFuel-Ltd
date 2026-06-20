@@ -27,8 +27,8 @@ const Counter = ({ value }: { value: string }) => {
 
   // Safely grab units from strings like "720m3" or "20,736kg"
   const getUnit = () => {
-    if (value.includes("m3")) return <span className="text-2xl lg:text-3xl ml-1 font-bold">m³</span>;
-    if (value.includes("kg")) return <span className="text-2xl lg:text-3xl ml-1 font-bold">kg</span>;
+    if (value.includes("m3")) return <span className="text-2xl lg:text-3xl ml-1 font-bold whitespace-nowrap">m³</span>;
+    if (value.includes("Metric Tons")) return <span className="text-xl lg:text-2xl ml-2 font-bold block sm:inline whitespace-nowrap">Metric Tons</span>;
     if (value.includes("+")) return "+";
     if (value.includes("%")) return "%";
     return "";
@@ -44,12 +44,11 @@ const Counter = ({ value }: { value: string }) => {
 
 export const ImpactSection = () => {
   const stats = [
-    { label: "Biodigesters Installed", value: "6", icon: Zap },
-    { label: "of biogas has been produced and used", value: "5760m3", icon: Flame },
-    { label: "people benefitting from our reliable biogas", value: "50+", icon: Users },
-    { label: "Trees have been saved", value: "720", icon: TreePine },
-    { label: "tones of C02 emissions have been avoided by replacing firewood use with Biogas", value: "18", icon: Factory },
-    { label: "of methane emission avoided", value: "20736kg", icon: Wind },
+    { label: "Biodigesters Installed", value: "8", icon: Zap },
+    { label: "of biogas delivered", value: "5760m3", icon: Flame },
+    // { label: "people benefitting from our reliable biogas", value: "50+", icon: Users },
+    { label: "of methane emission avoided", value: "3,241 Metric Tons", icon: Wind },
+    { label: "Trees have been saved", value: "1,900", icon: TreePine },
     { label: "Jobs created", value: "12", icon: Briefcase },
   ];
 
@@ -70,7 +69,7 @@ export const ImpactSection = () => {
           <div className="h-1 w-16 bg-green-500 mt-4" />
         </div>
 
-        {/* Flat Grid - Using sharp borders and solid colors */}
+        {/* Flat Grid - Using sharp borders and centering the 5th item */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/10">
           {stats.map((stat, i) => (
             <motion.div 
@@ -79,13 +78,15 @@ export const ImpactSection = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: i * 0.05 }}
-              className="p-8 lg:p-12 border-r border-b border-white/10 hover:bg-white/[0.02] transition-colors"
+              className={`p-8 lg:p-12 border-r border-b border-white/10 hover:bg-white/[0.02] transition-colors
+                ${i === stats.length - 1 ? "lg:col-start-2 lg:col-span-2 lg:mx-auto lg:w-full lg:border-l" : ""}
+              `}
             >
               <div className="flex flex-col items-center text-center space-y-6">
                 <stat.icon className="h-6 w-6 text-green-500" />
                 
-                <div>
-                  <div className="text-white text-4xl lg:text-5xl font-extrabold tracking-tighter mb-2">
+                <div className="w-full">
+                  <div className="text-white text-4xl lg:text-5xl font-extrabold tracking-tighter mb-2 flex flex-wrap items-center justify-center">
                     <Counter value={stat.value} />
                   </div>
                   

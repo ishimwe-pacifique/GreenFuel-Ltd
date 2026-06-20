@@ -55,15 +55,23 @@ export default function AboutPage() {
                   
                   <h2 className="montserrat-bold text-2xl tracking-[0.3em] uppercase">The Problem</h2>
                 </div>
-                <div className="space-y-6 text-gray-300 font-medium leading-relaxed text-lg">
-                 <p>
-  • More than 900 Millions People from low and middle-income households and schools in Africa, lack access to affordable, reliable clean cooking energy.
-  <br />• Cooking fuel prices continue to rise because of global market instability.
-  <br />• More than 800,000 premature deaths occurs annually due to toxic smokes inhalation from wood fuels dependency.
-  <br />• Relying on wood fuel contributes to deforestation and C02 Emissions.
-  <br />• Uncontrolled dumping of organic waste contributes to global warming through methane emissions.
-</p>
-                </div>
+              <div className="space-y-6 text-gray-300 font-medium leading-relaxed text-lg">
+  <p>
+    • More than 900 Million people from low and middle-income households and schools in Africa lack access to clean cooking energy.
+  </p>
+  <p>
+    • Cooking fuel prices continue to rise because of global market instability.
+  </p>
+  <p>
+    • More than 800,000 premature deaths occur annually due to toxic smoke inhalation from wood fuel dependency.
+  </p>
+  <p>
+    • Relying on wood fuel contributes to deforestation and CO2 emissions.
+  </p>
+  <p>
+    • Uncontrolled dumping of organic waste contributes to global warming through methane emissions.
+  </p>
+</div>
               </div>
 
               {/* THE SOLUTION */}

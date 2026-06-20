@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
-import Image from "next/image"
+// import Image from "next/image"
 
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -13,14 +13,14 @@ export function Testimonials() {
       name: "RUTAGENGWA EMMANUEL",
       role: "Household Owner",
       location: "Nyatare, Rwanda",
-      image: "/rutagengwa.jpg",
+      // image: "/rutagengwa.jpg",
       quote: "Green Fuel's biodigester has completely transformed my family daily cooking life. The gas is affordable, we save money on cooking fuel everyday and use it for other self development activities; our kitchen is much cleaner without smoke. The installation team was professional and the system works perfectly.",
     },
     {
       name: "MERRY BAZIGA",
       role: "Mother",
       location: "Nyagatare District, Rwanda",
-      image: "/baziga.jpg",
+      // image: "/baziga.jpg",
       quote: "Before Green Fuel, I was trapped between the high cost of charcoal and the choking smoke of firewood. Now, that I use Green Fuel gas, my kitchen is clean, the air in the kitchen is clean and I save money every single day",
     }
   ]
@@ -72,9 +72,7 @@ export function Testimonials() {
 
                 {/* Profile Section */}
                 <div className={`transition-all duration-500 ${isSelected ? "opacity-100" : "opacity-40"}`}>
-                  <div className="relative overflow-hidden mb-3 border border-gray-100 h-10 w-10 mx-auto">
-                    <Image src={item.image} alt={item.name} fill className="object-cover grayscale" />
-                  </div>
+                 
                   <h4 className="montserrat-bold text-[#001a3d] text-[10px] tracking-widest uppercase">
                     {item.name}
                   </h4>
